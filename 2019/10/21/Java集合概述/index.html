@@ -6,17 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>Archives: 2019/10 | 黄广志</title>
+  <title>Java集合概述 | 黄广志</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
-<meta name="keywords" content="java，前端博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄广志">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;archives&#x2F;2019&#x2F;10&#x2F;index.html">
+  <meta name="description" content="###在说集合前我们说一下数组数组：存储一组相同的数据类型，从而实现对数据的管理优点：可以快速的对数组进行访问，效率高缺点：容量在一开始就定义好了，不能随着需求的变化而扩容这样就出现了集合框架 ###数组和集合的比较数组不是面向对象的，存在明显的缺陷，集合弥补了数组的缺点，比数组更灵活更实用，而且不同的集合框架类可适用不同场合。如下：1：数组能存放基本数据类型和对象，而集合类存放的都是对象的引用">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java集合概述">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;21&#x2F;Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0&#x2F;index.html">
 <meta property="og:site_name" content="黄广志">
-<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
+<meta property="og:description" content="###在说集合前我们说一下数组数组：存储一组相同的数据类型，从而实现对数据的管理优点：可以快速的对数组进行访问，效率高缺点：容量在一开始就定义好了，不能随着需求的变化而扩容这样就出现了集合框架 ###数组和集合的比较数组不是面向对象的，存在明显的缺陷，集合弥补了数组的缺点，比数组更灵活更实用，而且不同的集合框架类可适用不同场合。如下：1：数组能存放基本数据类型和对象，而集合类存放的都是对象的引用">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;ss1.bdstatic.com&#x2F;70cFvXSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;u=3711924714,3376569899&amp;fm=26&amp;gp=0.jpg">
+<meta property="og:updated_time" content="2019-10-21T13:42:30.371Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;ss1.bdstatic.com&#x2F;70cFvXSh_Q1YnxGkpoWK1HF6hhy&#x2F;it&#x2F;u=3711924714,3376569899&amp;fm=26&amp;gp=0.jpg">
   
     <link rel="alternative" href="/atom.xml" title="黄广志" type="application/atom+xml">
   
@@ -152,38 +155,103 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Java集合概述" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Java集合概述
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+        
+        
 
 <a href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/" class="archive-article-date">
   	<time datetime="2019-10-21T13:07:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/">Java集合概述</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <a id="more"></a>
+<p>###在说集合前我们说一下数组<br>数组：存储一组相同的数据类型，从而实现对数据的管理<br>优点：可以快速的对数组进行访问，效率高<br>缺点：容量在一开始就定义好了，不能随着需求的变化而扩容<br>这样就出现了集合框架</p>
+<p>###数组和集合的比较<br>数组不是面向对象的，存在明显的缺陷，集合弥补了数组的缺点，比数组更灵活更实用，而且不同的集合框架类可适用不同场合。如下：<br>1：数组能存放基本数据类型和对象，而集合类存放的都是对象的引用，而非对象本身！<br>2：数组容易固定无法动态改变，集合类容量动态改变。<br>3：数组无法判断其中实际存有多少元素，length只告诉了数组的容量，而集合的size()可以确切知道元素的个数<br>4：集合有多种实现方式和不同适用场合，不像数组仅采用顺序表方式<br>5：集合以类的形式存在，具有封装、继承、多态等类的特性，通过简单的方法和属性即可实现各种复杂操作，大大提高了软件的开发效率</p>
+<p>###集合框架所包含的内容<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3711924714,3376569899&fm=26&gp=0.jpg" alt="集合框架"></p>
+<p>###List（有序，允许重复元素）</p>
+<p>ArrayList：<br>优点: 底层数据结构是数组，查询快，增删慢。<br>缺点: 线程不安全，效率高</p>
+<p>Vector:<br>优点: 底层数据结构是数组，查询快，增删慢。<br>缺点: 线程安全，效率低</p>
+<p>LinkedList<br>优点: 底层数据结构是链表，查询慢，增删快。<br>缺点: 线程不安全，效率高</p>
+<p>###Set（无序，唯一，所以可用于去重操作）</p>
+<p>HashSet：<br>底层数据结构：HashMap(哈希表)</p>
+<p>如何来保证元素唯一性?</p>
+<p>1.依赖两个方法：hashCode()和equals()<br>TreeSet：</p>
+<p>LinkedHashSet<br>底层数据结构是链表和哈希表。(FIFO插入有序,唯一)</p>
+<p>1.由链表保证元素有序</p>
+<p>2.由哈希表保证元素唯一</p>
+<p>TreeSet<br>底层数据结构是红黑树。(唯一，有序)</p>
+<p>1.如何保证元素排序的呢?<br>自然排序</p>
+<p>比较器排序</p>
+<p>2.如何保证元素唯一性的呢?</p>
+<p>根据比较的返回值是否是0来决定</p>
+<p>针对Collection集合我们到底使用谁呢?(掌握)</p>
+<p>唯一吗?</p>
+<p>是：Set</p>
+<p>排序吗?</p>
+<p>是：TreeSet或LinkedHashSet<br>否：HashSet<br>如果你知道是Set，但是不知道是哪个Set，就用HashSet。</p>
+<p>否：List</p>
+<p>要安全吗?</p>
+<p>是：Vector<br>否：ArrayList或者LinkedList</p>
+<p>查询多：ArrayList<br>增删多：LinkedList<br>如果你知道是List，但是不知道是哪个List，就用ArrayList。</p>
+<p>如果你知道是Collection集合，但是不知道使用谁，就用ArrayList。<br>如果你知道用集合，就用ArrayList</p>
+<p>###Map（key-value）</p>
+<p>HashMap：<br>底层数据结构：链表数组<br>可扩容，且最大容量极大，可看做容量无限<br>TreeMap：<br>底层数据结构：红黑树<br>可以实现按key排序（在使用中，要么使用TreeMap(Comparator)，要么让key对象实现Comparable）<br>红黑树，容量无限</p>
+<p>###参考博客<br><a href="https://www.cnblogs.com/java-zhao/p/5112542.html" target="_blank" rel="noopener">https://www.cnblogs.com/java-zhao/p/5112542.html</a><br><a href="https://blog.csdn.net/zhangqunshuai/article/details/80660974" target="_blank" rel="noopener">https://blog.csdn.net/zhangqunshuai/article/details/80660974</a></p>
 
-        <div class="article-info info-on-right">
-          
+      
+	
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -195,48 +263,183 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
 
-<a href="/2019/10/20/hello-world/" class="archive-article-date">
-  	<time datetime="2019-10-20T00:01:59.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-20</time>
-</a>
+
+
+<div  id="git"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment{
+  id: 'Mon Oct 21 2019 21:07:51 GMT+0800',
+  owner: "ggzhi",
+  repo: "ggzhi.github.io",
+  oauth: {
+     client_id: "b0b1a69e70cc2bbdf8d9",
+     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
+},
+})
+
+gitment.render('git')
+</script>
+
+
+
+
+
+
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+        
+    </div>
+</aside>
+
+
+
+
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
+      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
+      placeholder: '有话要说？'
+    });
+</script>
 
     
+  
+  
+  
+
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
 
 
           </div>
@@ -259,8 +462,8 @@
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: 是,
