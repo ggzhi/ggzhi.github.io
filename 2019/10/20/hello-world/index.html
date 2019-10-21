@@ -329,15 +329,16 @@
 var gitment = new Gitment{
   id: 'Sun Oct 20 2019 08:01:59 GMT+0800',
   owner: "ggzhi",
-  repo: "cangku.github.io",
+  repo: "ggzhi.github.io",
   oauth: {
-     client_id: "73ce2bb6ce790ce6cd2a",
-     client_secret:"cf07de1b3971018467e125bbd4d877926b0aef2e",
+     client_id: "b0b1a69e70cc2bbdf8d9",
+     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
 },
 })
 
 gitment.render('git')
 </script>
+
 
 
 
@@ -384,7 +385,39 @@ gitment.render('git')
   
 
   
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
 
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
+<script src="//imsun.github.io/gitment/dist/gitment.browser.js""></script>
+<script>
+var gitment = new Gitment({
+  id: "https://github.com/ggzhi/ggzhi.github.io/2019/10/20/hello-world/",
+  owner: 'ggzhi',
+  repo: 'ggzhi.github.io',
+  oauth: {
+    client_id: 'b0b1a69e70cc2bbdf8d9',
+    client_secret: '2c3cb53ae5fba57b2df4048885d3b4f437e8ff44',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
   
 
 
