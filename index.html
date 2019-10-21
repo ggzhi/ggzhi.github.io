@@ -176,40 +176,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<p>###在说集合前我们说一下数组<br>数组：存储一组相同的数据类型，从而实现对数据的管理<br>优点：可以快速的对数组进行访问，效率高<br>缺点：容量在一开始就定义好了，不能随着需求的变化而扩容<br>这样就出现了集合框架</p>
-<p>###数组和集合的比较<br>数组不是面向对象的，存在明显的缺陷，集合弥补了数组的缺点，比数组更灵活更实用，而且不同的集合框架类可适用不同场合。如下：<br>1：数组能存放基本数据类型和对象，而集合类存放的都是对象的引用，而非对象本身！<br>2：数组容易固定无法动态改变，集合类容量动态改变。<br>3：数组无法判断其中实际存有多少元素，length只告诉了数组的容量，而集合的size()可以确切知道元素的个数<br>4：集合有多种实现方式和不同适用场合，不像数组仅采用顺序表方式<br>5：集合以类的形式存在，具有封装、继承、多态等类的特性，通过简单的方法和属性即可实现各种复杂操作，大大提高了软件的开发效率</p>
-<p>###集合框架所包含的内容<br><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3711924714,3376569899&fm=26&gp=0.jpg" alt="集合框架"></p>
-<p>###List（有序，允许重复元素）</p>
-<p>ArrayList：<br>优点: 底层数据结构是数组，查询快，增删慢。<br>缺点: 线程不安全，效率高</p>
-<p>Vector:<br>优点: 底层数据结构是数组，查询快，增删慢。<br>缺点: 线程安全，效率低</p>
-<p>LinkedList<br>优点: 底层数据结构是链表，查询慢，增删快。<br>缺点: 线程不安全，效率高</p>
-<p>###Set（无序，唯一，所以可用于去重操作）</p>
-<p>HashSet：<br>底层数据结构：HashMap(哈希表)</p>
-<p>如何来保证元素唯一性?</p>
-<p>1.依赖两个方法：hashCode()和equals()<br>TreeSet：</p>
-<p>LinkedHashSet<br>底层数据结构是链表和哈希表。(FIFO插入有序,唯一)</p>
-<p>1.由链表保证元素有序</p>
-<p>2.由哈希表保证元素唯一</p>
-<p>TreeSet<br>底层数据结构是红黑树。(唯一，有序)</p>
-<p>1.如何保证元素排序的呢?<br>自然排序</p>
-<p>比较器排序</p>
-<p>2.如何保证元素唯一性的呢?</p>
-<p>根据比较的返回值是否是0来决定</p>
-<p>针对Collection集合我们到底使用谁呢?(掌握)</p>
-<p>唯一吗?</p>
-<p>是：Set</p>
-<p>排序吗?</p>
-<p>是：TreeSet或LinkedHashSet<br>否：HashSet<br>如果你知道是Set，但是不知道是哪个Set，就用HashSet。</p>
-<p>否：List</p>
-<p>要安全吗?</p>
-<p>是：Vector<br>否：ArrayList或者LinkedList</p>
-<p>查询多：ArrayList<br>增删多：LinkedList<br>如果你知道是List，但是不知道是哪个List，就用ArrayList。</p>
-<p>如果你知道是Collection集合，但是不知道使用谁，就用ArrayList。<br>如果你知道用集合，就用ArrayList</p>
-<p>###Map（key-value）</p>
-<p>HashMap：<br>底层数据结构：链表数组<br>可扩容，且最大容量极大，可看做容量无限<br>TreeMap：<br>底层数据结构：红黑树<br>可以实现按key排序（在使用中，要么使用TreeMap(Comparator)，要么让key对象实现Comparable）<br>红黑树，容量无限</p>
-<p>###参考博客<br><a href="https://www.cnblogs.com/java-zhao/p/5112542.html" target="_blank" rel="noopener">https://www.cnblogs.com/java-zhao/p/5112542.html</a><br><a href="https://blog.csdn.net/zhangqunshuai/article/details/80660974" target="_blank" rel="noopener">https://blog.csdn.net/zhangqunshuai/article/details/80660974</a></p>
-
+        <h2 id="在说集合前我们说一下数组"><a href="#在说集合前我们说一下数组" class="headerlink" title="在说集合前我们说一下数组"></a>在说集合前我们说一下数组</h2>
+        
       
 	
 
