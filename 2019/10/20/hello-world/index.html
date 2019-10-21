@@ -378,20 +378,33 @@ gitment.render('git')
 
 
 
+
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
+      app_key: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
+      placeholder: '有话要说？'
+    });
+</script>
+
+    
   
   
   
 
-  
-  <div id="SOHUCS" sid="hello-world" ></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js" ></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "cyuuMk1m4",
-        conf: "70847f33582ad7b8d2ef66c6400ae43b"
-    });
-</script>
-</script>
   
 
   
