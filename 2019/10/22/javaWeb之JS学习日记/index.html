@@ -6,17 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>Tag: java | 黄广志</title>
+  <title>javaWeb之JS学习日记 | 黄广志</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
-<meta name="keywords" content="java，前端博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄广志">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;tags&#x2F;java&#x2F;index.html">
+  <meta name="description" content="1.js的创建对象">
+<meta name="keywords" content="javaweb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaWeb之JS学习日记">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;22&#x2F;javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0&#x2F;index.html">
 <meta property="og:site_name" content="黄广志">
-<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
+<meta property="og:description" content="1.js的创建对象">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBbf8e92c5d788c6649e9e3bab551ed3f7?method=download&amp;shareKey=a37cbf3e8b050877864c4b0b0dc0ea76">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;42c492786fc1f191b0336d1c37322981&#x2F;xmlnote&#x2F;WEBRESOURCE5ba65905217c88c476ae81db56173d9e&#x2F;16">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;70f143cfec3dc176c32d7c4bc590d62d&#x2F;xmlnote&#x2F;WEBRESOURCEda594e97d15ca534c15a8fcbde5e46d5&#x2F;20">
+<meta property="og:updated_time" content="2019-10-22T13:07:01.354Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEBbf8e92c5d788c6649e9e3bab551ed3f7?method=download&amp;shareKey=a37cbf3e8b050877864c4b0b0dc0ea76">
   
     <link rel="alternative" href="/atom.xml" title="黄广志" type="application/atom+xml">
   
@@ -152,62 +157,391 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-javaWeb之JS学习日记" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/" class="archive-article-date">
-  	<time datetime="2019-10-21T13:07:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/">Java集合概述</a>
+    <h1 class="article-title" itemprop="name">
+      javaWeb之JS学习日记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        
+
+<a href="/2019/10/22/javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2019-10-22T10:53:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-js的创建对象"><a href="#1-js的创建对象" class="headerlink" title="1.js的创建对象"></a>1.js的创建对象</h2><a id="more"></a>
+<p> 创建String对象<br>    **var str = “abc”</p>
+<pre><code>方法和属性(可以看文档)
+    属性length：查看字符串的长度（注意，这里的length不带括号）
+
+    方法：
+      （1）与html相关的方法
+            - bold()：加粗
+             - fontcolor(): 设置字符串的颜色
+             - fontsize(): 设置字体的大小
+
+              - link(): 将字符串显示成超链接
+              **** str4.link(&quot;hello.html&quot;)
+
+             - sub() sup(): 下标和上标    </code></pre><p><img src="https://note.youdao.com/yws/api/personal/file/WEBbf8e92c5d788c6649e9e3bab551ed3f7?method=download&shareKey=a37cbf3e8b050877864c4b0b0dc0ea76" alt="js"></p>
+<pre><code>（2）与java相似的方法
+  - concat(): 连接字符串
+      ** //concat方法
+      var str1 = &quot;abc&quot;;
+      var str2 = &quot;dfg&quot;;
+      document.write(str1.concat(str2));
+
+  - charAt():返回指定指定位置的字符串
+      ** var str3 = &quot;abcdefg&quot;;
+      document.write(str3.charAt(20)); //字符位置不存在，返回空字符串
+
+  - indexOf()： 返回字符串位置
+      ** var str4 = &quot;poiuyt&quot;;
+      document.write(str4.indexOf(&quot;w&quot;)); //字符不存在，返回-1
+
+  - split()：切分字符串，成数组
+      ** var str5 = &quot;a-b-c-d&quot;;
+      var arr1 = str5.split(&quot;-&quot;);
+      document.write(&quot;length: &quot;+arr1.length);
+
+  - replace() ： 替换字符串
+      * 传递两个参数：
+          -- 第一个参数是原始字符
+          -- 要替换成的字符
+      * var str6 = &quot;abcd&quot;;
+      document.write(str6);
+      document.write(&quot;&lt;br/&gt;&quot;);
+      document.write(str6.replace(&quot;a&quot;,&quot;Q&quot;));
+
+  - substr()和substring()
+      * var str7 = &quot;abcdefghuiop&quot;;
+      //document.write(str7.substr(5,5));  //fghui  从第五位开始，向后截取五个字符
+          *** 从第几位开始，向后截取几位
+
+      document.write(&quot;&lt;br/&gt;&quot;);
+      document.write(str7.substring(3,5)); //de  从第几位开始到第几位结束  [3,5)
+          *** 从第几位开始，到第几位结束，但是不包含最后哪一位</code></pre><p> <img src="https://note.youdao.com/yws/public/resource/42c492786fc1f191b0336d1c37322981/xmlnote/WEBRESOURCE5ba65905217c88c476ae81db56173d9e/16" alt=""></p>
+<h2 id="2、js的Array对象"><a href="#2、js的Array对象" class="headerlink" title="2、js的Array对象"></a>2、js的Array对象</h2><pre><code>** 创建数组（三种）
+    - var arr1 = [1,2,3];
+    - var arr2 = new Array(3); //长度是3
+    - var arr3 = new Array(1,2,3); //数组中的元素是1 2 3
+
+    - var arr = [];  //创建一个空数组
+    - ** 方法
+    - concat方法： 数组的连接
+        * var arr11 = [1,2,3];
+        var arr12 = [4,5,6];
+        document.write(arr11.concat(arr12));
+
+    - join()：根据指定的字符分割数组
+        * var arr13 = new Array(3);
+        arr13[0] = &quot;a&quot;;
+        arr13[1] = &quot;b&quot;;
+        arr13[2] = &quot;c&quot;;
+
+        document.write(arr13);
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(arr13.join(&quot;-&quot;));
+
+    - push():向数组末尾添加元素，返回数组的新的长度
+        ** 如果添加的是一个数组，这个时候把数组当做一个整体字符串添加进去
+
+        * //push方法
+        var arr14 = new Array(3);
+        arr14[0] = &quot;tom&quot;;
+        arr14[1] = &quot;lucy&quot;;
+        arr14[2] = &quot;jack&quot;;
+        document.write(&quot;old array: &quot;+arr14);
+
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;old length:&quot;+arr14.length);
+
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new length: &quot;+arr14.push(&quot;zhangsan&quot;));
+
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new array: &quot;+arr14);
+
+        *         var arr15 = [&quot;aaa&quot;,&quot;bbb&quot;,&quot;ccc&quot;];
+        var arr16 = [&quot;www&quot;,&quot;qqq&quot;];
+
+        document.write(&quot;old array:&quot;+arr15);
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;old length:&quot;+arr15.length);
+
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new length:&quot;+arr15.push(arr16));
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new array: &quot;+arr15);
+        for(var i=0;i&lt;arr15.length;i++) {
+            alert(arr15[i]);
+        }
+
+    - pop()：表示 删除最后一个元素，返回删除的那个元素
+        * var arr17 = [&quot;zhangsan&quot;,&quot;lisi&quot;,&quot;wangwu&quot;,&quot;zhaoliu&quot;];
+        document.write(&quot;old array: &quot;+arr17);
+        document.write(&quot;&lt;br/&gt;&quot;);
+
+        document.write(&quot;return: &quot;+arr17.pop());
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new array: &quot;+arr17);
+
+    - reverse():颠倒数组中的元素的顺序
+        * var arr17 = [&quot;zhangsan&quot;,&quot;lisi&quot;,&quot;wangwu&quot;,&quot;zhaoliu&quot;];
+        document.write(&quot;old array: &quot;+arr17);
+        document.write(&quot;&lt;br/&gt;&quot;);
+
+        document.write(&quot;return: &quot;+arr17.pop());
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new array: &quot;+arr17);
+
+        //reverse方法
+        document.write(&quot;&lt;hr/&gt;&quot;);
+        var arr18 = [&quot;zhangsan1&quot;,&quot;lisi1&quot;,&quot;zhaoliu1&quot;,&quot;niuqi1&quot;];
+        document.write(&quot;old array: &quot;+arr18);
+        document.write(&quot;&lt;br/&gt;&quot;);
+        document.write(&quot;new array:&quot;+arr18.reverse());</code></pre><p><img src="https://note.youdao.com/yws/public/resource/70f143cfec3dc176c32d7c4bc590d62d/xmlnote/WEBRESOURCEda594e97d15ca534c15a8fcbde5e46d5/20" alt=""></p>
+<p>（累了，等学完js留一天再写吧）</p>
+<h2 id="参考视频"><a href="#参考视频" class="headerlink" title="参考视频"></a>参考视频</h2><pre><code>崔希凡老师JavaWeb视频</code></pre>
+      
+	
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/22/javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+
+
+<div  id="git"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment{
+  id: 'Tue Oct 22 2019 18:53:31 GMT+0800',
+  owner: "ggzhi",
+  repo: "ggzhi.github.io",
+  oauth: {
+     client_id: "b0b1a69e70cc2bbdf8d9",
+     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
+},
+})
+
+gitment.render('git')
+</script>
+
+
+
+
+
+
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Java集合概述</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-js的创建对象"><span class="toc-number">1.</span> <span class="toc-text">1.js的创建对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、js的Array对象"><span class="toc-number">2.</span> <span class="toc-text">2、js的Array对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#参考视频"><span class="toc-number">3.</span> <span class="toc-text">参考视频</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
+      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
+      placeholder: '有错误希望大家评论指出来呀？'
+    });
+</script>
 
     
+  
+  
+  
+
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
 
 
           </div>
@@ -230,9 +564,9 @@
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: 是,
 		toc_hide_index: true,
