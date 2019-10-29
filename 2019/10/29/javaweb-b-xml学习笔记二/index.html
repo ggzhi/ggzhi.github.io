@@ -6,22 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>javaWeb xml笔记 | 黄广志的博客</title>
+  <title>javaweb b xml学习笔记二 | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="2、xml的简介（了解）">
+  <meta name="description" content="1、schema约束dtd语法： &amp;lt;!ELEMENT 元素名称 约束&amp;gt; ** schema符合xml的语法，xml语句 ** 一个xml中可以有多个schema，多个schema使用名称空间区分（类似于java包名） ** dtd里面有PCDATA类型，但是在schema里面可以支持更多的数据类型     *** 比如 年龄 只能是整数，在schema可以直接定义一个整数类型 ***">
 <meta name="keywords" content="javaweb">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaWeb xml笔记">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;JAVAWeb-xml%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:title" content="javaweb b xml学习笔记二">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;29&#x2F;javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="2、xml的简介（了解）">
+<meta property="og:description" content="1、schema约束dtd语法： &amp;lt;!ELEMENT 元素名称 约束&amp;gt; ** schema符合xml的语法，xml语句 ** 一个xml中可以有多个schema，多个schema使用名称空间区分（类似于java包名） ** dtd里面有PCDATA类型，但是在schema里面可以支持更多的数据类型     *** 比如 年龄 只能是整数，在schema可以直接定义一个整数类型 ***">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB0954ebb6b78397be820649badb8e3984?method=download&amp;shareKey=e4d44829af4c452ae9fe0d3aaaa854b3">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB11ec396751a6a80fb3307a9683b378af?method=download&amp;shareKey=63836e8c2eb9fdf9db7a863cee8bc723">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;8939abaa48a40b0cba4fdb7f590e8933&#x2F;xmlnote&#x2F;WEBRESOURCEe844657c8dd64221b1a880e57e5846d7&#x2F;45">
-<meta property="og:updated_time" content="2019-10-28T13:44:44.453Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;d8ef8b2aa56c95212ea19af87ceb9c0a&#x2F;xmlnote&#x2F;WEBRESOURCEb2f248721761776a6532e5a35338a79f&#x2F;49">
+<meta property="og:updated_time" content="2019-10-29T10:36:15.343Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;api&#x2F;personal&#x2F;file&#x2F;WEB0954ebb6b78397be820649badb8e3984?method=download&amp;shareKey=e4d44829af4c452ae9fe0d3aaaa854b3">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;d8ef8b2aa56c95212ea19af87ceb9c0a&#x2F;xmlnote&#x2F;WEBRESOURCEb2f248721761776a6532e5a35338a79f&#x2F;49">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
   
@@ -157,414 +155,399 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JAVAWeb-xml笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="w-javaweb-b-xml学习笔记二" class="article article-type-w " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      javaWeb xml笔记
+      javaweb b xml学习笔记二
     </h1>
   
 
         
         
 
-<a href="/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-10-28T12:12:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-28</time>
+<a href="/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" class="archive-article-date">
+  	<time datetime="2019-10-29T10:25:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="2、xml的简介（了解）"><a href="#2、xml的简介（了解）" class="headerlink" title="2、xml的简介（了解）"></a>2、xml的简介（了解）</h2><a id="more"></a>
+        <h2 id="1、schema约束"><a href="#1、schema约束" class="headerlink" title="1、schema约束"></a>1、schema约束</h2><pre><code>dtd语法： &lt;!ELEMENT 元素名称 约束&gt;
+** schema符合xml的语法，xml语句
+** 一个xml中可以有多个schema，多个schema使用名称空间区分（类似于java包名）
+** dtd里面有PCDATA类型，但是在schema里面可以支持更多的数据类型
+    *** 比如 年龄 只能是整数，在schema可以直接定义一个整数类型
+*** schema语法更加复杂，schema目前不能替代dtd</code></pre><h2 id="2、schema的快速入门"><a href="#2、schema的快速入门" class="headerlink" title="2、schema的快速入门"></a>2、schema的快速入门</h2><pre><code>* 创建一个schema文件 后缀名是 .xsd
+    ** 根节点 &lt;schema&gt;
+** 在schema文件里面
+    ** 属性  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot;
+        - 表示当前xml文件是一个约束文件
+    ** targetNamespace=&quot;http://www.itcast.cn/20151111&quot;
+        - 使用schema约束文件，直接通过这个地址引入约束文件
+    ** elementFormDefault=&quot;qualified&quot;
+步骤
+    （1）看xml中有多少个元素
+        &lt;element&gt;
+    （2）看简单元素和复杂元素
+        * 如果复杂元素
+            &lt;complexType&gt;
+                &lt;sequence&gt;
+                    子元素
+                &lt;/sequence&gt;
+        &lt;/complexType&gt;
+    （3）简单元素，写在复杂元素的
+        &lt;element name=&quot;person&quot;&gt;
+        &lt;complexType&gt;
+        &lt;sequence&gt;
+                &lt;element name=&quot;name&quot; type=&quot;string&quot;&gt;&lt;/element&gt;
+                &lt;element name=&quot;age&quot; type=&quot;int&quot;&gt;&lt;/element&gt;
+        &lt;/sequence&gt;
+        &lt;/complexType&gt;
+        &lt;/element&gt;
+
+    （4）在被约束文件里面引入约束文件
+        &lt;person xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+        xmlns=&quot;http://www.itcast.cn/20151111&quot;
+        xsi:schemaLocation=&quot;http://www.itcast.cn/20151111 1.xsd&quot;&gt;
+
+        ** xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+            -- 表示xml是一个被约束文件
+        ** xmlns=&quot;http://www.itcast.cn/20151111&quot;
+            -- 是约束文档里面 targetNamespace
+        ** xsi:schemaLocation=&quot;http://www.itcast.cn/20151111 1.xsd&quot;&gt;
+            -- targetNamespace 空格  约束文档的地址路径
 
 
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEB0954ebb6b78397be820649badb8e3984?method=download&shareKey=e4d44829af4c452ae9fe0d3aaaa854b3" alt="xml"></p>
-<pre><code>* eXtensible Markup Language：可扩展标记型语言
-    ** 标记型语言：html是标记型语言
-        - 也是使用标签来操作
-    ** 可扩展：
-        - html里面的标签是固定，每个标签都有特定的含义 &lt;h1&gt; &lt;br/&gt; &lt;hr/&gt;
+* &lt;sequence&gt;：表示元素的出现的顺序
+&lt;all&gt;: 元素只能出现一次
+&lt;choice&gt;：元素只能出现其中的一个
+maxOccurs=&quot;unbounded&quot;： 表示元素的出现的次数
+&lt;any&gt;&lt;/any&gt;:表示任意元素
 
+* 可以约束属性
+    * 写在复杂元素里面
+    ***写在　&lt;/complexType&gt;之前
+    －－
+    &lt;attribute name=&quot;id1&quot; type=&quot;int&quot; use=&quot;required&quot;&gt;&lt;/attribute&gt;
+        - name: 属性名称
+        - type：属性类型 int stirng
+        - use：属性是否必须出现 required
 
-        - 标签可以自己定义,可以写中文的标签 &lt;person&gt;&lt;/person、&lt;猫&gt;&lt;/猫&gt;
+* 复杂的schema约束
+    &lt;company xmlns = &quot;http://www.example.org/company&quot;
+xmlns:dept=&quot;http://www.example.org/department&quot;
+xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+xsi:schemaLocation=&quot;http://www.example.org/company company.xsd http://www.example.org/department department.xsd&quot; 
 
-* xml用途
-    ** html是用于显示数据，xml也可以显示数据（不是主要功能）
-    ** xml主要功能，为了存储数据
+* 引入多个schema文件，可以给每个起一个别名
 
-* xml是w3c组织发布的技术
+&lt;employee age=&quot;30&quot;&gt;
+    &lt;!-- 部门名称 --&gt; 
+    &lt;dept:name&gt;100&lt;/dept:name&gt;
+    * 想要引入部门的约束文件里面的name，使用部门的别名 detp:元素名称
+    &lt;!-- 员工名称 --&gt;
+    &lt;name&gt;王晓晓&lt;/name&gt;   
+&lt;/employee&gt;</code></pre><p><img src="https://note.youdao.com/yws/public/resource/d8ef8b2aa56c95212ea19af87ceb9c0a/xmlnote/WEBRESOURCEb2f248721761776a6532e5a35338a79f/49" alt="XML"></p>
+<h2 id="3、sax解析的原理（-）"><a href="#3、sax解析的原理（-）" class="headerlink" title="3、sax解析的原理（****）"></a>3、sax解析的原理（<strong>****</strong>）</h2><pre><code>* 解析xml有两种技术 dom 和sax
 
-* xml有两个版本 1.0  1.1
-    - 使用都是1.0版本，（1.1版本不能向下兼容）</code></pre><h2 id="3、xml的应用"><a href="#3、xml的应用" class="headerlink" title="3、xml的应用"></a>3、xml的应用</h2><pre><code>* 不同的系统之间传输数据
-    ** qq之间数据的传输
-    ** 画图分析过程
+* 根据xml的层级结构在内存中分配一个树形结构
+** 把xml中标签，属性，文本封装成对象
 
-* 用来表示生活中有关系的数据
+* sax方式：事件驱动，边读边解析
+* 在javax.xml.parsers包里面
+    ** SAXParser
+        此类的实例可以从 SAXParserFactory.newSAXParser() 方法获得
+        - parse(File f, DefaultHandler dh) 
+            * 两个参数
+            ** 第一个参数：xml的路径
+            ** 事件处理器
 
-* 经常用在文件配置
-    * 比如现在连接数据库 肯定知道数据库的用户名和密码，数据名称 
-    * 如果修改数据库的信息，不需要修改源代码，只要修改配置文件就可以了</code></pre><p><img src="https://note.youdao.com/yws/api/personal/file/WEB11ec396751a6a80fb3307a9683b378af?method=download&shareKey=63836e8c2eb9fdf9db7a863cee8bc723" alt="yingyong"></p>
-<h2 id="4、xml的语法"><a href="#4、xml的语法" class="headerlink" title="4、xml的语法"></a>4、xml的语法</h2><pre><code>（1）xml的文档声明（***）
-    * 创建一个文件 后缀名是 .xml
-    * 如果写xml，第一步 必须要有 一个文档声明（写了文档声明之后，表示写xml文件的内容）
-    ** &lt;?xml version=&quot;1.0&quot; encoding=&quot;gbk&quot;?&gt;
-    *** 文档声明必须写在 第一行第一列
+    ** SAXParserFactory
+        实例 newInstance() 方法得到
+* 画图分析一下sax执行过程
+    * 当解析到开始标签时候，自动执行startElement方法
+    * 当解析到文本时候，自动执行characters方法
+    * 当解析到结束标签时候，自动执行endElement方法</code></pre><h2 id="4、使用jaxp的sax方式解析xml（会写-）"><a href="#4、使用jaxp的sax方式解析xml（会写-）" class="headerlink" title="4、使用jaxp的sax方式解析xml（会写*）"></a>4、使用jaxp的sax方式解析xml（<strong>会写*</strong>）</h2><pre><code>* sax方式不能实现增删改操作，只能做查询操作
+** 打印出整个文档
+*** 执行parse方法，第一个参数xml路径，第二个参数是 事件处理器
+    *** 创建一个类，继承事件处理器的类，
+    ***重写里面的三个方法
 
-    * 属性
-        - version：xml的版本 1.0(使用) 1.1
-        - encoding：xml编码 gbk  utf-8  iso8859-1(不包含中文)
-        - standalone：是否需要依赖其他文件 yes/no
+ * 获取到所有的name元素的值
+    ** 定义一个成员变量 flag= false
+    ** 判断开始方法是否是name元素，如果是name元素，把flag值设置成true
+    ** 如果flag值是true，在characters方法里面打印内容
+    ** 当执行到结束方法时候，把flag值设置成false
 
-    * xml的中文乱码问题解决
-        ** 画图分析乱码问题
-        ** 保存时候的编码和设置打开时候的编码一致，不会出现乱码
+ * 获取第一个name元素的值
+    ** 定义一个成员变量 idx=1
+    ** 在结束方法时候，idx+1 idx++
+    ** 想要打印出第一个name元素的值，
+        - 在characters方法里面判断，
+        -- 判断flag=true 并且 idx==1，在打印内容</code></pre><h2 id="5、使用dom4j解析xml"><a href="#5、使用dom4j解析xml" class="headerlink" title="5、使用dom4j解析xml"></a>5、使用dom4j解析xml</h2><pre><code>* dom4j，是一个组织，针对xml解析，提供解析器 dom4j
 
-（2）定义元素（标签）（***）
-（3）定义属性（***）
-（4）注释（***）
-（5）特殊字符（***）
-（6）CDATA区（了解）
-（7）PI指令（了解）</code></pre><h2 id="5、xml的元素（标签）定义（-）"><a href="#5、xml的元素（标签）定义（-）" class="headerlink" title="5、xml的元素（标签）定义（*****）"></a>5、xml的元素（标签）定义（*****）</h2><pre><code>** 标签定义
+* dom4j不是javase的一部分，想要使用第一步需要怎么做？
+    *** 导入dom4j提供jar包
+    -- 创建一个文件夹 lib
+    -- 复制jar包到lib下面，
+    -- 右键点击jar包，build path -- add to build path
+    -- 看到jar包，变成奶瓶样子，表示导入成功
 
-** 标签定义有开始必须要有结束：&lt;person&gt;&lt;/person&gt;
-** 标签没有内容，可以在标签内结束 ; &lt;aa/&gt;
-** 标签可以嵌套，必须要合理嵌套
-    *** 合理嵌套 &lt;aa&gt;&lt;bb&gt;&lt;/bb&gt;&lt;/aa&gt;
-    *** 不合理嵌套 &lt;aa&gt;&lt;bb&gt;&lt;/aa&gt;&lt;/bb&gt;: 这种方式是不正确的
-** 一个xml中，只能有一个根标签，其他标签都是这个标签下面的标签
+* 得到document
+     SAXReader reader = new SAXReader();
+         Document document = reader.read(url);
+* document的父接口是Node
+    * 如果在document里面找不到想要的方法，到Node里面去找
 
-** 在xml中把空格和换行都当成内容来解析，
-    **** 下面这两段代码含义是不一样的
-    * &lt;aa&gt;1111111&lt;/aa&gt;
-    * &lt;aa&gt;
-        11111111111
-      &lt;/aa&gt;
+* document里面的方法 getRootElement() ：获取根节点 返回的是Element
 
-** xml标签可以是中文
+* Element也是一个接口，父接口是Node
+    - Element和Node里面方法
+    ** getParent()：获取父节点
+    ** addElement：添加标签
 
-** xml中标签的名称规则
-    （1）xml代码区分大小写
-        &lt;p&gt; &lt;P&gt;:这两个标签是不一样的
-    （2）xml的标签不能以数字和下划线(_)开头
-        &lt;2a&gt; &lt;_aa&gt;: 这样是不正确的
-    （3）xml的标签不能以xml、XML、Xml等开头
-        &lt;xmla&gt; &lt;XmlB&gt; &lt;XMLC&gt;: 这些都是不正确的
-    （4）xml的标签不能包含空格和冒号
-        &lt;a b&gt; &lt;b:c&gt; : 这些是不正确的</code></pre><h2 id="6、xml中属性的定义（-）"><a href="#6、xml中属性的定义（-）" class="headerlink" title="6、xml中属性的定义（*****）"></a>6、xml中属性的定义（*****）</h2><pre><code>* html是标记型文档，可以有属性
-* xml也是标记型文档，可以有属性
+    * element(qname)
+        ** 表示获取标签下面的第一个子标签
+        ** qname：标签的名称
+    * elements(qname)
+        ** 获取标签下面是这个名称的所有子标签（一层）
+        ** qname：标签名称
+    * elements()
+        ** 获取标签下面的所有一层子标签</code></pre><h2 id="6、使用dom4j查询xml"><a href="#6、使用dom4j查询xml" class="headerlink" title="6、使用dom4j查询xml"></a>6、使用dom4j查询xml</h2><pre><code>* 解析是从上到下解析
+* 查询所有name元素里面的值
+    /*
+        1、创建解析器
+        2、得到document
+        3、得到根节点  getRootElement() 返回Element
 
-* &lt;person id1=&quot;aaa&quot; id2=&quot;bbb&quot;&gt;&lt;/person&gt;
+        4、得到所有的p1标签
+            * elements(&quot;p1&quot;) 返回list集合
+            * 遍历list得到每一个p1
+        5、得到name
+            * 在p1下面执行 element(&quot;name&quot;)方法 返回Element
+        6、得到name里面的值
+            * getText方法得到值
+    */
 
-** 属性定义的要求
-    （1）一个标签上可以有多个属性
-        &lt;person id1=&quot;aaa&quot; id2=&quot;bbb&quot;&gt;&lt;/person&gt;
-    （2）属性名称不能相同
-        &lt;person id1=&quot;aaa&quot; id1=&quot;bbb&quot;&gt;&lt;/person&gt;：这个是不正确，不能有两个id1
-    （3）属性名称和属性值之间使用= ，属性值使用引号包起来 （可以是单引号，也可以是双引号 ）
-    （4）xml属性的名称规范和元素的名称规范一致</code></pre><h2 id="7、xml中的注释（-）"><a href="#7、xml中的注释（-）" class="headerlink" title="7、xml中的注释（*****）"></a>7、xml中的注释（*****）</h2><pre><code>* 写法 &lt;!-- xml的注释 --&gt;
-** 注意的地方
-    **** 注释不能嵌套
-        &lt;!--  &lt;!-- --&gt;  --&gt;
-        &lt;!-- &lt;!-- &lt;sex&gt;nv&lt;/sex&gt;--&gt; --&gt;
-** 注释也不能放到第一行，第一行第一列必须放文档声明</code></pre><h2 id="8、xml中的特殊字符（-）"><a href="#8、xml中的特殊字符（-）" class="headerlink" title="8、xml中的特殊字符（*****）"></a>8、xml中的特殊字符（*****）</h2><pre><code>* 如果想要在xml中现在 a&lt;b ,不能正常显示，因为把&lt;当做标签
-* 如果就想要显示，需要对特殊字符 &lt; 进行转义
-** &lt;    &amp;lt;
-   &gt;    &amp;gt;</code></pre><h2 id="9、CDATA区（了解）"><a href="#9、CDATA区（了解）" class="headerlink" title="9、CDATA区（了解）"></a>9、CDATA区（了解）</h2><pre><code>* 可以解决多个字符都需要转义的操作 if(a&lt;b &amp;&amp; b&lt;c &amp;&amp; d&gt;f) {}
-* 把这些内容放到CDATA区里面，不需要转义了
-** 写法
-    &lt;![CDATA[ 内容  ]]&gt;
-    - 代码
-    &lt;![CDATA[ &lt;b&gt;if(a&lt;b &amp;&amp; b&lt;c &amp;&amp; d&gt;f) {}&lt;/b&gt; ]]&gt;
-** 把特殊字符，当做文本内容，而不是标签</code></pre><h2 id="10、PI指令（处理指令）（了解）"><a href="#10、PI指令（处理指令）（了解）" class="headerlink" title="10、PI指令（处理指令）（了解）"></a>10、PI指令（处理指令）（了解）</h2><pre><code>* 可以在xml中设置样式
-* 写法： &lt;?xml-stylesheet type=&quot;text/css&quot; href=&quot;css的路径&quot;?&gt;
-
-* 设置样式，只能对英文标签名称起作用，对于中文的标签名称不起作用的。
-
-** xml的语法的总结
-    所有 XML 元素都须有关闭标签
-    XML 标签对大小写敏感
-    XML 必须正确地嵌套顺序
-    XML 文档必须有根元素(只有一个)
-    XML 的属性值须加引号
-    特殊字符必须转义 --- CDATA
-    XML 中的空格、回车换行会解析时被保留</code></pre><h2 id="11、xml的约束"><a href="#11、xml的约束" class="headerlink" title="11、xml的约束"></a>11、xml的约束</h2><pre><code>* 为什么需要约束？
-** 比如现在定义一个person的xml文件，只想要这个文件里面保存人的信息，比如name age等，但是如果在xml文件中
-写了一个标签&lt;猫&gt;，发现可以正常显示，因为符合语法规范。但是猫肯定不是人的信息，xml的标签是自定义的，需要技术来
-规定xml中只能出现的元素，这个时候需要约束。
-
-* xml的约束的技术 ： dtd约束 和 schema约束 （看懂）</code></pre><h2 id="12、dtd的快速入门"><a href="#12、dtd的快速入门" class="headerlink" title="12、dtd的快速入门"></a>12、dtd的快速入门</h2><pre><code>* 创建一个文件 后缀名 .dtd
-
-步骤：
-    （1）看xml中有多少个元素 ，有几个元素，在dtd文件中写几个 &lt;!ELEMENT&gt;
-    （2）判断元素是简单元素还是复杂元素
-        - 复杂元素：有子元素的元素
-            &lt;!ELEMENT 元素名称 (子元素)&gt;
-        - 简单元素：没有子元素
-            &lt;!ELEMENT 元素名称 (#PCDATA)&gt;
-    （3）需要在xml文件中引入dtd文件
-        &lt;!DOCTYPE 根元素名称 SYSTEM &quot;dtd文件的路径&quot;&gt;
-
-** 打开xml文件使用浏览器打开的，浏览器只负责校验xml的语法，不负责校验约束
-
-** 如果想要校验xml的约束，需要使用工具（myeclipse工具）
-
-** 打开myeclipse开发工具
-    *** 创建一个项目 day05
-    *** 在day05的src目录下面创建一个xml文件和一个dtd文件
-    *** 当xml中引入dtd文件之后，比如只能出现name age，多写了一个a，会提示出错</code></pre><h2 id="13、dtd的三种引入方式"><a href="#13、dtd的三种引入方式" class="headerlink" title="13、dtd的三种引入方式"></a>13、dtd的三种引入方式</h2><pre><code>（1）引入外部的dtd文件
-    &lt;!DOCTYPE 根元素名称 SYSTEM &quot;dtd路径&quot;&gt;
-（2）使用内部的dtd文件
-    - &lt;!DOCTYPE 根元素名称 [
-        &lt;!ELEMENT person (name,age)&gt;
-        &lt;!ELEMENT name (#PCDATA)&gt;
-        &lt;!ELEMENT age (#PCDATA)&gt;
-    ]&gt;
-（3）使用外部的dtd文件（网络上的dtd文件）
-    &lt;!DOCTYPE 根元素 PUBLIC &quot;DTD名称&quot; &quot;DTD文档的URL&quot;&gt;
-    - 后面学到框架 struts2 使用配置文件 使用 外部的dtd文件
-    - &lt;!DOCTYPE struts PUBLIC   &quot;-//Apache Software Foundation//DTD Struts Configuration 2.0//EN&quot;    
-       &quot;http://struts.apache.org/dtds/struts-2.0.dtd&quot;&gt;</code></pre><h2 id="14、使用dtd定义元素"><a href="#14、使用dtd定义元素" class="headerlink" title="14、使用dtd定义元素"></a>14、使用dtd定义元素</h2><pre><code>* 语法： &lt;!ELEMENT 元素名 约束&gt;
-
-* 简单元素：没有子元素的元素
-    &lt;!ELEMENT name (#PCDATA)&gt;
-    *** (#PCDATA): 约束name是字符串类型
-    *** EMPTY : 元素为空（没有内容）
-        - &lt;sex&gt;&lt;/sex&gt;
-    *** ANY:任意
-* 复杂元素：
-    &lt;!ELEMENT person (name,age,sex,school)&gt;
-        - 子元素只能出现一次
-    * &lt;!ELEMENT 元素名称 (子元素)&gt;
-
-    * 表示子元素出现的次数
-        + : 表示一次或者多次
-        ? ：表示零次或者一次
-        * ：表示零次或者多次
-
-    * 子元素直接使用逗号进行隔开 ,
-        ** 表示元素出现的顺序
-
-    * 子元素直接使用|隔开
-        ** 表示元素只能出现其中的任意一个</code></pre><h2 id="15、使用dtd定义属性"><a href="#15、使用dtd定义属性" class="headerlink" title="15、使用dtd定义属性"></a>15、使用dtd定义属性</h2><pre><code>* 语法： &lt;!ATTLIST 元素名称
-        属性名称 属性类型 属性的约束
-     &gt;
-
-* 属性类型
-    - CDATA: 字符串
-        -     &lt;!ATTLIST birthday
-            ID1 CDATA #REQUIRED
-        &gt;
-
-    - 枚举 ： 表示只能在一定的范围内出现值，但是只能每次出现其中的一个
-        ** 红绿灯效果
-        ** (aa|bb|cc)
-        - &lt;!ATTLIST age
-            ID2 (AA|BB|CC)  #REQUIRED
-        &gt;
-
-    - ID: 值只能是字母或者下划线开头
-        - &lt;!ATTLIST name 
-            ID3 ID   #REQUIRED
-        &gt;
-
-* 属性的约束
-    - #REQUIRED：属性必须存在
-
-    - #IMPLIED：属性可有可无
-
-    - #FIXED: 表示一个固定值 #FIXED &quot;AAA&quot;
-        - 属性的值必须是设置的这个固定值
-        - &lt;!ATTLIST sex
-            ID4 CDATA #FIXED &quot;ABC&quot;
-        &gt;
-    - 直接值
-        * 不写属性，使用直接值
-        * 写了属性，使用设置那个值
-        - &lt;!ATTLIST school
-            ID5 CDATA &quot;WWW&quot;
-        &gt;</code></pre><h2 id="16、实体的定义"><a href="#16、实体的定义" class="headerlink" title="16、实体的定义"></a>16、实体的定义</h2><pre><code>* 语法： &lt;!ENTITY 实体名称 &quot;实体的值&quot;&gt;
-*** &lt;!ENTITY TEST &quot;HAHAHEHE&quot;&gt;
-*** 使用实体 &amp;实体名称;  比如 &amp;TEST;
-
-** 注意
-    * 定义实体需要写在内部dtd里面，
-      如果写在外部的dtd里面，有某些浏览器下，内容得不到</code></pre><h2 id="17、xml的解析的简介（写到java代码）（今天最重要的内容-）"><a href="#17、xml的解析的简介（写到java代码）（今天最重要的内容-）" class="headerlink" title="17、xml的解析的简介（写到java代码）（今天最重要的内容**）"></a>17、xml的解析的简介（写到java代码）（<strong><em>今天最重要的内容**</em></strong>）</h2><pre><code>* xml是标记型文档
-* js使用dom解析标记型文档？
-    - 根据html的层级结构，在内存中分配一个树形结构，把html的标签，属性和文本都封装成对象
-    - document对象、element对象、属性对象、文本对象、Node节点对象
-
-* xml的解析方式（技术）：dom 和 sax
-    ** 画图分析使用dom和sax解析xml过程
-    *** dom解析和sax解析区别：
-    ** dom方式解析
-        * 根据xml的层级结构在内存中分配一个树形结构，把xml的标签，属性和文本都封装成对象
-        * 缺点：如果文件过大，造成内存溢出
-        * 优点：很方便实现增删改操作
-
-    ** sax方式解析
-        * 采用事件驱动，边读边解析
-            - 从上到下，一行一行的解析，解析到某一个对象，返回对象名称
-        * 缺点：不能实现增删改操作
-        * 优点：如果文件过大，不会造成内存溢出，方便实现查询操作
-
-* 想要解析xml，首先需要解析器
-** 不同的公司和组织提供了 针对dom和sax方式的解析器，通过api方式提供
-*** sun公司提供了针对dom和sax解析器  jaxp
-*** dom4j组织，针对dom和sax解析器    dom4j（*** 实际开发中****）
-*** jdom组织，针对dom和sax解析器     jdom</code></pre><p><img src="https://note.youdao.com/yws/public/resource/8939abaa48a40b0cba4fdb7f590e8933/xmlnote/WEBRESOURCEe844657c8dd64221b1a880e57e5846d7/45" alt="xml"></p>
-<h2 id="18、jaxp的api的查看"><a href="#18、jaxp的api的查看" class="headerlink" title="18、jaxp的api的查看"></a>18、jaxp的api的查看</h2><pre><code>** jaxp是javase的一部分
-
-** jaxp解析器在jdk的javax.xml.parsers包里面
-    ** 四个类：分别是针对dom和sax解析使用的类
-    *** dom： 
-        DocumentBuilder  : 解析器类
-            - 这个类是一个抽象类，不能new，
-            此类的实例可以从 DocumentBuilderFactory.newDocumentBuilder() 方法获取
-
-            - 一个方法，可以解析xml  parse(&quot;xml路径&quot;) 返回是 Document 整个文档
-            - 返回的document是一个接口，父节点是Node，如果在document里面找不到想要的方法，到Node里面去找
-
-            - 在document里面方法 
-                getElementsByTagName(String tagname) 
-                -- 这个方法可以得到标签
-                -- 返回集合 NodeList
-
-                createElement(String tagName)
-                -- 创建标签
-
-                createTextNode(String data) 
-                -- 创建文本
-
-                appendChild(Node newChild) 
-                -- 把文本添加到标签下面
-
-                removeChild(Node oldChild) 
-                -- 删除节点
-
-                getParentNode() 
-                -- 获取父节点
-
-                NodeList list
-                - getLength() 得到集合的长度
-                - item(int index)下标取到具体的值
-                for(int i=0;i&lt;list.getLength();i++) {
-                    list.item(i)
-                }
-
-                getTextContent()
-                - 得到标签里面的内容
-
-        DocumentBuilderFactory： 解析器工厂
-            - 这个类也是一个抽象类，不能new
-            newInstance() 获取 DocumentBuilderFactory 的实例。
-
-    *** sax：
-        SAXParser：解析器类
-        SAXParserFactory: 解析器工厂</code></pre><h2 id="19、使用jaxp实现查询操作"><a href="#19、使用jaxp实现查询操作" class="headerlink" title="19、使用jaxp实现查询操作"></a>19、使用jaxp实现查询操作</h2><pre><code>*** 查询xml中所有的name元素的值
-* 步骤
-//查询所有name元素的值
-/*
- * 1、创建解析器工厂
-    DocumentBuilderFactory.newInstance();
- * 2、根据解析器工厂创建解析器
-    builderFactory.newDocumentBuilder();
- * 3、解析xml返回document
- *    Document document = builder.parse(&quot;src/person.xml&quot;);
- * 4、得到所有的name元素
-    使用document.getElementsByTagName(&quot;name&quot;);
- * 5、返回集合，遍历集合，得到每一个name元素
-    - 遍历 getLength() item()
-    - 得到元素里面值 使用 getTextContent()
- * */
-
- *** 查询xml中第一个name元素的值
- * 步骤
- /*
-     * 1、创建解析器工厂
-     * 2、根据解析器工厂创建解析器
-     * 3、解析xml，返回document
+* 查询第一个name元素的值
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 3、得到根节点
      * 
-     * 4、得到所有name元素
-     * 5、使用返回集合，里面方法 item，下标获取具体的元素
-        NodeList.item(下标)： 集合下标从0开始
-     * 6、得到具体的值，使用 getTextContent方法
-     * 
-     * */</code></pre><h2 id="20、使用jaxp添加节点"><a href="#20、使用jaxp添加节点" class="headerlink" title="20、使用jaxp添加节点"></a>20、使用jaxp添加节点</h2><pre><code>*** 在第一个p1下面（末尾）添加 &lt;sex&gt;nv&lt;/sex&gt;
-**步骤
-/*
-     * 1、创建解析器工厂
-     * 2、根据解析器工厂创建解析器
-     * 3、解析xml，返回document
-     * 
-     * 4、得到第一个p1
-     *     - 得到所有p1，使用item方法下标得到
-
-     * 5、创建sex标签 createElement
-     * 6、创建文本 createTextNode
-     * 7、把文本添加到sex下面 appendChild
-
-     * 8、把sex添加到第一个p1下面　appendChild
-     * 
-     * 9、回写xml
-     * */</code></pre><h2 id="21、使用jaxp修改节点"><a href="#21、使用jaxp修改节点" class="headerlink" title="21、使用jaxp修改节点"></a>21、使用jaxp修改节点</h2><pre><code>*** 修改第一个p1下面的sex内容是nan
-** 步骤
-/*
-     * 1、创建解析器工厂
-     * 2、根据解析器工厂创建解析器
-     * 3、解析xml，返回document 
-     * 
-     * 4、得到sex item方法
-     * 5、修改sex里面的值  
-        *** setTextContent方法
-     * 
-     * 6、回写xml
-     * */</code></pre><h2 id="22、使用jaxp删除节点"><a href="#22、使用jaxp删除节点" class="headerlink" title="22、使用jaxp删除节点"></a>22、使用jaxp删除节点</h2><pre><code>*** 删除&lt;sex&gt;nan&lt;/sex&gt;节点
-** 步骤
-/*
-     * 1、创建解析器工厂
-     * 2、根据解析器工厂创建解析器
-     * 3、解析xml，返回document 
-     * 
-     * 4、获取sex元素
-     * 5、获取sex的父节点  使用getParentNode方法
-     * 6、删除使用父节点删除  removeChild方法
-     * 
-     * 7、回写xml
-     * */</code></pre><h2 id="23、使用jaxp遍历节点"><a href="#23、使用jaxp遍历节点" class="headerlink" title="23、使用jaxp遍历节点"></a>23、使用jaxp遍历节点</h2><pre><code>** 把xml中的所有元素名称打印出来
-** 步骤
-/*
-     * 1、创建解析器工厂
-     * 2、根据解析器工厂创建解析器
-     * 3、解析xml，返回document
-     * 
-     * ====使用递归实现=====
-     * 4、得到根节点
-     * 5、得到根节点子节点
-     * 6、得到根节点子节点的子节点
+     * 4、得到第一个p1元素  
+        ** element(&quot;p1&quot;)方法 返回Element
+     * 5、得到p1下面的name元素
+        ** element(&quot;name&quot;)方法 返回Element
+     * 6、得到name元素里面的值
+        ** getText方法
      * */
-** 遍历的方法
-//递归遍历的方法
-private static void list1(Node node) {
-    //判断是元素类型时候才打印
-    if(node.getNodeType() == Node.ELEMENT_NODE) {            
-        System.out.println(node.getNodeName());
-    }
+* 获取第二个name元素的值
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 3、得到根节点
+     * 
+     *  4、得到所有的p1 
+        ** 返回 list集合
+     *  5、遍历得到第二个p1
+        ** 使用list下标得到 get方法，集合的下标从 0 开始，想要得到第二个值，下标写 1 
+     *  6、得到第二个p1下面的name
+        ** element(&quot;name&quot;)方法 返回Element
+     *  7、得到name的值
+        ** getText方法
+     * */</code></pre><h2 id="7、使用dom4j实现添加操作"><a href="#7、使用dom4j实现添加操作" class="headerlink" title="7、使用dom4j实现添加操作"></a>7、使用dom4j实现添加操作</h2><pre><code>* 在第一个p1标签末尾添加一个元素 &lt;sex&gt;nv&lt;/sex&gt;
+* 步骤
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 3、得到根节点
+     * 
+     * 4、获取到第一个p1
+        * 使用element方法
+     * 5、在p1下面添加元素
+        * 在p1上面直接使用 addElement(&quot;标签名称&quot;)方法 返回一个Element
 
-    //得到一层子节点
-    NodeList list = node.getChildNodes();
-    //遍历list
-    for(int i=0;i&lt;list.getLength();i++) {
-        //得到每一个节点
-        Node node1 = list.item(i);
-        //继续得到node1的子节点
-        //node1.getChildNodes()
-        list1(node1);
-    }
-}</code></pre>
+     * 6、在添加完成之后的元素下面添加文本
+     *    在sex上直接使用 setText(&quot;文本内容&quot;)方法
+     * 7、回写xml
+        * 格式化 OutputFormat,使用 createPrettyPrint方法，表示一个漂亮的格式
+        * 使用类XMLWriter 直接new 这个类 ，传递两个参数
+            *** 第一个参数是xml文件路径 new FileOutputStream(&quot;路径&quot;)
+            *** 第二个参数是格式化类的值
+     * */    </code></pre><h2 id="8、使用dom4j实现在特定位置添加元素"><a href="#8、使用dom4j实现在特定位置添加元素" class="headerlink" title="8、使用dom4j实现在特定位置添加元素"></a>8、使用dom4j实现在特定位置添加元素</h2><pre><code>* 在第一个p1下面的age标签之前添加 &lt;school&gt;ecit.edu.cn&lt;/schlool&gt;
+* 步骤
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 3、得到根节点
+     * 4、获取到第一个p1
+     * 
+     * 5、获取p1下面的所有的元素
+     *         ** elements()方法 返回 list集合
+
+     *      ** 使用list里面的方法，在特定位置添加元素
+     *        ** 首先创建元素 在元素下面创建文本
+                - 使用DocumentHelper类方法createElement创建标签
+                - 把文本添加到标签下面 使用 setText(&quot;文本内容&quot;)方法
+
+     *          *** list集合里面的 add(int index, E element)
+     *              - 第一个参数是 位置 下标，从0开始
+     *              - 第二个参数是 要添加的元素
+     * 6、回写xml
+     * */
+
+** 可以对得到document的操作和 回写xml的操作，封装成方法
+** 也可以把传递的文件路径，封装成一个常量
+*** 好处：可以提高开发速度，可以提交代码可维护性
+    - 比如想要修改文件路径（名称），这个时候只需要修改常量的值就可以了，其他代码不需要做任何改变
+    -</code></pre><h2 id="9、使用dom4j实现修改节点的操作"><a href="#9、使用dom4j实现修改节点的操作" class="headerlink" title="9、使用dom4j实现修改节点的操作"></a>9、使用dom4j实现修改节点的操作</h2><pre><code>* 修改第一个p1下面的age元素的值 &lt;age&gt;30&lt;/age&gt;
+* 步骤
+/*
+     * 1、得到document
+     * 2、得到根节点，然后再得到第一个p1元素
+     * 3、得到第一个p1下面的age
+        element(&quot;&quot;)方法
+     * 4、修改值是 30
+     *    * 使用setText(&quot;文本内容&quot;)方法
+     * 5、回写xml
+     * 
+     * */</code></pre><h2 id="10、使用dom4j实现删除节点的操作"><a href="#10、使用dom4j实现删除节点的操作" class="headerlink" title="10、使用dom4j实现删除节点的操作"></a>10、使用dom4j实现删除节点的操作</h2><pre><code>* 删除第一个p1下面的&lt;school&gt;ecit&lt;/school&gt;元素
+* 步骤
+/*
+     * 1、得到document
+     * 2、得到根节点
+     * 3、得到第一个p1标签
+     * 4、得到第一个p1下面的school元素
+
+     * 5、删除（使用p1删除school）
+     *    * 得到school的父节点
+            - 第一种直接得到p1
+            - 使用方法 getParent方法得到
+        * 删除操作
+            - 在p1上面执行remove方法删除节点
+     * 6、回写xml
+     * */</code></pre><h2 id="11、使用dom4j获取属性的操作"><a href="#11、使用dom4j获取属性的操作" class="headerlink" title="11、使用dom4j获取属性的操作"></a>11、使用dom4j获取属性的操作</h2><pre><code>* 获取第一个p1里面的属性id1的值
+* 步骤
+/*
+     * 1、得到document
+     * 2、得到根节点
+     * 3、得到第一个p1元素
+     * 4、得到p1里面的属性值
+        - p1.attributeValue(&quot;id1&quot;);
+        - 在p1上面执行这个方法，里面的参数是属性名称
+     * */</code></pre><h2 id="12、使用dom4j支持xpath的操作"><a href="#12、使用dom4j支持xpath的操作" class="headerlink" title="12、使用dom4j支持xpath的操作"></a>12、使用dom4j支持xpath的操作</h2><pre><code>* 可以直接获取到某个元素 
+
+* 第一种形式
+    /AAA/DDD/BBB： 表示一层一层的，AAA下面 DDD下面的BBB
+* 第二种形式
+    //BBB： 表示和这个名称相同，表示只要名称是BBB，都得到
+* 第三种形式
+    /*: 所有元素
+* 第四种形式
+    **　BBB[1]：　表示第一个BBB元素
+    ××　BBB[last()]：表示最后一个BBB元素
+* 第五种形式
+    ** //BBB[@id]： 表示只要BBB元素上面有id属性，都得到
+* 第六种形式
+    ** //BBB[@id=&apos;b1&apos;] 表示元素名称是BBB,在BBB上面有id属性，并且id的属性值是b1</code></pre><h2 id="13、使用dom4j支持xpath具体操作"><a href="#13、使用dom4j支持xpath具体操作" class="headerlink" title="13、使用dom4j支持xpath具体操作"></a>13、使用dom4j支持xpath具体操作</h2><pre><code>** 默认的情况下，dom4j不支持xpath
+** 如果想要在dom4j里面是有xpath
+    * 第一步需要，引入支持xpath的jar包，使用 jaxen-1.1-beta-6.jar
+    ** 需要把jar包导入到项目中
+
+** 在dom4j里面提供了两个方法，用来支持xpath
+    *** selectNodes(&quot;xpath表达式&quot;)
+        - 获取多个节点
+    *** selectSingleNode(&quot;xpath表达式&quot;)
+        - 获取一个节点
+
+** 使用xpath实现：查询xml中所有name元素的值
+    ** 所有name元素的xpath表示： //name
+    ** 使用selectNodes(&quot;//name&quot;);
+    ** 代码和步骤
+    /*
+     * 1、得到document
+     * 2、直接使用selectNodes(&quot;//name&quot;)方法得到所有的name元素
+     * 
+     * */
+        //得到document
+        Document document = Dom4jUtils.getDocument(Dom4jUtils.PATH);
+        //使用selectNodes(&quot;//name&quot;)方法得到所有的name元素
+        List&lt;Node&gt; list = document.selectNodes(&quot;//name&quot;);
+        //遍历list集合
+        for (Node node : list) {
+            //node是每一个name元素
+            //得到name元素里面的值
+            String s = node.getText();
+            System.out.println(s);
+        }
+
+** 使用xpath实现：获取第一个p1下面的name的值
+    * //p1[@id1=&apos;aaaa&apos;]/name
+    * 使用到 selectSingleNode(&quot;//p1[@id1=&apos;aaaa&apos;]/name&quot;)
+    * 步骤和代码
+    /*
+     * 1、得到document
+     * 2、直接使用selectSingleNode方法实现
+     *     - xpath ： //p1[@id1=&apos;aaaa&apos;]/name
+     * */
+    //得到document
+    Document document = Dom4jUtils.getDocument(Dom4jUtils.PATH);
+    //直接使用selectSingleNode方法实现
+    Node name1 = document.selectSingleNode(&quot;//p1[@id1=&apos;aaaa&apos;]/name&quot;); //name的元素
+    //得到name里面的值
+    String s1 = name1.getText();
+    System.out.println(s1);</code></pre><h2 id="14、实现简单的学生管理系统"><a href="#14、实现简单的学生管理系统" class="headerlink" title="14、实现简单的学生管理系统"></a>14、实现简单的学生管理系统</h2><pre><code>** 使用xml当做数据，存储学生信息
+
+** 创建一个xml文件，写一些学生信息
+
+** 增加操作
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 3、获取到根节点
+     * 4、在根节点上面创建stu标签
+     * 5、在stu标签上面依次添加id name age
+        ** addElement方法添加
+     * 6、在id name age上面依次添加值
+     *    ** setText方法
+     * 7、回写xml
+     * */
+
+** 删除操作（根据id删除）
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 
+     * 3、获取到所有的id    
+     *     使用xpath //id 返回 list集合
+     * 4、遍历list集合
+     * 5、判断集合里面的id和传递的id是否相同
+     * 6、如果相同，把id所在的stu删除
+     * 
+     * */
+
+** 查询操作（根据id查询）
+    /*
+     * 1、创建解析器
+     * 2、得到document
+     * 
+     * 3、获取到所有的id
+     * 4、返回的是list集合，遍历list集合
+     * 5、得到每一个id的节点
+     * 6、id节点的值
+     * 7、判断id的值和传递的id值是否相同
+     * 8、如果相同，先获取到id的父节点stu
+     * 9、通过stu获取到name age值
+
+     ** 把这些值封装到一个对象里面 返回对象
+     * 
+     * */</code></pre>
       
 	
 
@@ -577,7 +560,7 @@ private static void list1(Node node) {
 	<br>
 	
     <strong>本文链接：</strong>
-    https://github.com/ggzhi/ggzhi.github.io/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/
+    https://github.com/ggzhi/ggzhi.github.io/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -686,7 +669,7 @@ private static void list1(Node node) {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -704,7 +687,7 @@ private static void list1(Node node) {
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment{
-  id: 'Mon Oct 28 2019 20:12:40 GMT+0800',
+  id: 'Tue Oct 29 2019 18:25:44 GMT+0800',
   owner: "ggzhi",
   repo: "ggzhi.github.io",
   oauth: {
@@ -725,18 +708,9 @@ gitment.render('git')
   
 <nav id="article-nav">
   
-    <a href="/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          javaweb b xml学习笔记二
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">javaWeb之js对象和Dom学习日记2</div>
+    <a href="/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javaWeb xml笔记</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -763,7 +737,7 @@ gitment.render('git')
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#2、xml的简介（了解）"><span class="toc-number">1.</span> <span class="toc-text">2、xml的简介（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、xml的应用"><span class="toc-number">2.</span> <span class="toc-text">3、xml的应用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、xml的语法"><span class="toc-number">3.</span> <span class="toc-text">4、xml的语法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、xml的元素（标签）定义（-）"><span class="toc-number">4.</span> <span class="toc-text">5、xml的元素（标签）定义（*****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、xml中属性的定义（-）"><span class="toc-number">5.</span> <span class="toc-text">6、xml中属性的定义（*****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、xml中的注释（-）"><span class="toc-number">6.</span> <span class="toc-text">7、xml中的注释（*****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、xml中的特殊字符（-）"><span class="toc-number">7.</span> <span class="toc-text">8、xml中的特殊字符（*****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9、CDATA区（了解）"><span class="toc-number">8.</span> <span class="toc-text">9、CDATA区（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10、PI指令（处理指令）（了解）"><span class="toc-number">9.</span> <span class="toc-text">10、PI指令（处理指令）（了解）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11、xml的约束"><span class="toc-number">10.</span> <span class="toc-text">11、xml的约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12、dtd的快速入门"><span class="toc-number">11.</span> <span class="toc-text">12、dtd的快速入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13、dtd的三种引入方式"><span class="toc-number">12.</span> <span class="toc-text">13、dtd的三种引入方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14、使用dtd定义元素"><span class="toc-number">13.</span> <span class="toc-text">14、使用dtd定义元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15、使用dtd定义属性"><span class="toc-number">14.</span> <span class="toc-text">15、使用dtd定义属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#16、实体的定义"><span class="toc-number">15.</span> <span class="toc-text">16、实体的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#17、xml的解析的简介（写到java代码）（今天最重要的内容-）"><span class="toc-number">16.</span> <span class="toc-text">17、xml的解析的简介（写到java代码）（今天最重要的内容**）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#18、jaxp的api的查看"><span class="toc-number">17.</span> <span class="toc-text">18、jaxp的api的查看</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#19、使用jaxp实现查询操作"><span class="toc-number">18.</span> <span class="toc-text">19、使用jaxp实现查询操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#20、使用jaxp添加节点"><span class="toc-number">19.</span> <span class="toc-text">20、使用jaxp添加节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#21、使用jaxp修改节点"><span class="toc-number">20.</span> <span class="toc-text">21、使用jaxp修改节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22、使用jaxp删除节点"><span class="toc-number">21.</span> <span class="toc-text">22、使用jaxp删除节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#23、使用jaxp遍历节点"><span class="toc-number">22.</span> <span class="toc-text">23、使用jaxp遍历节点</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、schema约束"><span class="toc-number">1.</span> <span class="toc-text">1、schema约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、schema的快速入门"><span class="toc-number">2.</span> <span class="toc-text">2、schema的快速入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、sax解析的原理（-）"><span class="toc-number">3.</span> <span class="toc-text">3、sax解析的原理（****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、使用jaxp的sax方式解析xml（会写-）"><span class="toc-number">4.</span> <span class="toc-text">4、使用jaxp的sax方式解析xml（会写*）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、使用dom4j解析xml"><span class="toc-number">5.</span> <span class="toc-text">5、使用dom4j解析xml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、使用dom4j查询xml"><span class="toc-number">6.</span> <span class="toc-text">6、使用dom4j查询xml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、使用dom4j实现添加操作"><span class="toc-number">7.</span> <span class="toc-text">7、使用dom4j实现添加操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、使用dom4j实现在特定位置添加元素"><span class="toc-number">8.</span> <span class="toc-text">8、使用dom4j实现在特定位置添加元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9、使用dom4j实现修改节点的操作"><span class="toc-number">9.</span> <span class="toc-text">9、使用dom4j实现修改节点的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10、使用dom4j实现删除节点的操作"><span class="toc-number">10.</span> <span class="toc-text">10、使用dom4j实现删除节点的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11、使用dom4j获取属性的操作"><span class="toc-number">11.</span> <span class="toc-text">11、使用dom4j获取属性的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12、使用dom4j支持xpath的操作"><span class="toc-number">12.</span> <span class="toc-text">12、使用dom4j支持xpath的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13、使用dom4j支持xpath具体操作"><span class="toc-number">13.</span> <span class="toc-text">13、使用dom4j支持xpath具体操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14、实现简单的学生管理系统"><span class="toc-number">14.</span> <span class="toc-text">14、实现简单的学生管理系统</span></a></li></ol>
                     </div>
                 </span>
             </div>
