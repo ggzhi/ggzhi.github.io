@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>javaWeb之js对象和Dom学习日记2 | 黄广志的博客</title>
+  <title>mysql常用命令 | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.js的Date对象** 在java里面获取当前时间        Date date = new Date();        &#x2F;&#x2F;格式化        &#x2F;&#x2F;toLocaleString()   &#x2F;&#x2F;">
-<meta name="keywords" content="javaweb">
+  <meta name="description" content="基本操作：查看所有数据库名称：show databases; 切换数据库：USE mydb1，切换到mydb1数据库；&amp;lt;– more –&amp;gt; 操作数据库 创建数据库：CREATE DATABASE [IF NOT EXISTS] mydb1；  加上if not exists ，在名为mydb1的数据库不存在时创建该库，这样可以避免报错    删除数据库：DROP DATABASE [I">
+<meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javaWeb之js对象和Dom学习日记2">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;23&#x2F;javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02&#x2F;index.html">
+<meta property="og:title" content="mysql常用命令">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;11&#x2F;10&#x2F;mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="1.js的Date对象** 在java里面获取当前时间        Date date = new Date();        &#x2F;&#x2F;格式化        &#x2F;&#x2F;toLocaleString()   &#x2F;&#x2F;">
+<meta property="og:description" content="基本操作：查看所有数据库名称：show databases; 切换数据库：USE mydb1，切换到mydb1数据库；&amp;lt;– more –&amp;gt; 操作数据库 创建数据库：CREATE DATABASE [IF NOT EXISTS] mydb1；  加上if not exists ，在名为mydb1的数据库不存在时创建该库，这样可以避免报错    删除数据库：DROP DATABASE [I">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;a8445ea42aaea64e08048c9a11f6b618&#x2F;xmlnote&#x2F;WEBRESOURCE60955744b4c8565a13929b8aaf628bf2&#x2F;33">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;1f0efc6af0524588cabf918a46f7e8c9&#x2F;xmlnote&#x2F;WEBRESOURCEb392c76bd14e286a7341275565df4ef3&#x2F;37">
-<meta property="og:updated_time" content="2019-10-23T14:14:59.158Z">
+<meta property="og:updated_time" content="2019-11-11T06:39:23.502Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;a8445ea42aaea64e08048c9a11f6b618&#x2F;xmlnote&#x2F;WEBRESOURCE60955744b4c8565a13929b8aaf628bf2&#x2F;33">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
   
@@ -156,328 +153,191 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-javaWeb之js对象和Dom学习日记2" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-mysql常用命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      javaWeb之js对象和Dom学习日记2
+      mysql常用命令
     </h1>
   
 
         
         
 
-<a href="/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/" class="archive-article-date">
-  	<time datetime="2019-10-23T08:29:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
+<a href="/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2019-11-10T09:32:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-10</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-js的Date对象"><a href="#1-js的Date对象" class="headerlink" title="1.js的Date对象"></a>1.js的Date对象</h2><p>** 在java里面获取当前时间<br>        Date date = new Date();<br>        //格式化<br>        //toLocaleString()   //</p>
-<a id="more"></a>
-<pre><code>** js里面获取当前时间
-    var date = new Date();
-    //获取当前时间
-    var date = new Date();
-    document.write(date);  // 
+        <h2 id="基本操作："><a href="#基本操作：" class="headerlink" title="基本操作："></a>基本操作：</h2><pre><code>查看所有数据库名称：show databases;
+切换数据库：USE mydb1，切换到mydb1数据库；</code></pre><p>&lt;– more –&gt;</p>
+<h2 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a>操作数据库</h2><pre><code> 创建数据库：CREATE DATABASE [IF NOT EXISTS] mydb1； 
+加上if not exists ，在名为mydb1的数据库不存在时创建该库，这样可以避免报错
 
-    //转换成习惯的格式
-    document.write(&quot;&lt;hr/&gt;&quot;);
-    document.write(date.toLocaleString());
+  删除数据库：DROP DATABASE [IF EXISTS] mydb1；
+删除mydb1的数据库，如果加上if exists，如果这个数据库不存在，则会报错，反之，不会报错
 
-** 获取当前的年方法
-    getFullYear()：得到当前的年
-        **** document.write(&quot;year: &quot;+date.getFullYear());
+  修改数据库编码：ALTER DATABASE mydb1 CHARACTER SET utf8</code></pre><h2 id="操作表"><a href="#操作表" class="headerlink" title="操作表"></a>操作表</h2><pre><code>创建表：CREATE TABLE 表名（
+    列名 列类型    
+    列名 列类型
 
-** 获取当前的月方法
-    getMonth()：获取当前的月
-        *** 返回的是 0-11月，如果想要得到准确的值，加1
-        **** var date1 = date.getMonth()+1;
-        document.write(&quot;month: &quot;+date1);
+）
+ 例如：CREATE TABLE stu (
+    sname varchar(20),
+    sage int ,
+)
 
-** 获取当前的星期
-    getDay()：星期,返回的是 (0 ~ 6)
-    ** 外国朋友，把星期日作为一周的第一天，星期日返回的是 0
-       而星期一到星期六 返回的是 1-6
-    ** document.write(&quot;week: &quot;+date.getDay());
+查看当前表数据库的所有表名称：show tables;
+查看指定表的创建语句：show create table stu;
+查看表结构：desc stu;
+删除表：drop table stu；
 
-** 获取当前的日
-    getDate()：得到当前的天 1-31
-    ** document.write(&quot;day: &quot;+date.getDate());
 
-** 获取当前的小时
-    getHours()：获取小时
-    ** document.write(&quot;hour: &quot;+date.getHours());
+1.    修改之添加列：给stu表添加classname列：
+ALTER TABLE stu ADD (classname varchar(100));
+2.    修改之修改列类型：修改stu表的gender列类型为CHAR(2)：
+ALTER TABLE stu MODIFY gender CHAR(2);
+3.    修改之修改列名：修改stu表的gender列名为sex：
+ALTER TABLE stu change gender sex CHAR(2);
+4.    修改之删除列：删除stu表的classname列：
+ALTER TABLE stu DROP classname;
+5.    修改之修改表名称：修改stu表名称为student：
+ALTER TABLE stu RENAME TO student;</code></pre><h2 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h2><pre><code>insert into 表名（sname,sage,sbirthday）values(&apos;张三&apos;，&apos;12&apos;,&apos;19970620&apos;);</code></pre><h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><pre><code>update 表名 set 列名1=值1，列名n=值n where 条件
 
-** 获取当前的分钟
-    getMinutes()：分钟
-    ** document.write(&quot;minute: &quot;+date.getMinutes());
+update stu set sname=&apos;lisi&apos;,sage=&apos;22&apos;,sbirthday=&apos;19970630&apos;where sname=&apos;zhangsan&apos;;</code></pre><h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><pre><code>delete from 表名 where 条件
+delete from stu where sname=&apos;lisi&apos;;
 
-** 获取当前的秒
-    getSeconds(): 秒
-    ** document.write(&quot;second: &quot;+date.getSeconds());
+truncate table 表名
+truncate table stu；</code></pre><h2 id="查询表中所有列"><a href="#查询表中所有列" class="headerlink" title="查询表中所有列"></a>查询表中所有列</h2><pre><code>select * from stu；</code></pre><h2 id="查询指定列"><a href="#查询指定列" class="headerlink" title="查询指定列"></a>查询指定列</h2><pre><code>select sid，sname，age from stu；</code></pre><h2 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h2><pre><code>=、!=、&lt;&gt;、&lt;、&lt;=、&gt;、&gt;=；
+BETWEEN…AND；
+IN(set)；
+IS NULL；
+AND；
+OR；
+NOT；
+1.举例：
+    再stu下查询性别为女并且年龄小于50的记录
+    select * from stu and age&lt;50;</code></pre><h2 id="模糊查询"><a href="#模糊查询" class="headerlink" title="模糊查询"></a>模糊查询</h2><pre><code>当想要查询姓名中包含a字母的学生的学生时就需要使用模糊查询了，模糊查询需要使用关键字like’
 
-** 获取毫秒数
-    getTime()
-    返回的是1970 1 1 至今的毫秒数
+举例：查询姓名由5个字母构成的学生记录
+select  * from stu where sname like &apos;_____&apos;;
+模糊查询必须使用LIKE关键字。其中 “_”匹配任意一个字母，5个“_”表示5个任意字母。
 
-    ** 应用场景：
-        *** 使用毫秒数处理缓存的效果（不有缓存）
-            http://www.baidu.com?毫秒数</code></pre><h2 id="2-js的Math对象"><a href="#2-js的Math对象" class="headerlink" title="2.js的Math对象"></a>2.js的Math对象</h2><pre><code>* 数学的运算
-** 里面的都是静态方法，使用可以直接使用 Math.方法()
+查询姓名以“z”开头的学生记录
+select * from stu where sname like  &apos;z%&apos;;
+其中“%”匹配0~n个任何字母。</code></pre><h2 id="字段控制查询"><a href="#字段控制查询" class="headerlink" title="字段控制查询"></a>字段控制查询</h2><h3 id="去除重复记录"><a href="#去除重复记录" class="headerlink" title="去除重复记录"></a>去除重复记录</h3><pre><code>select distinct sal from emp；</code></pre><h3 id="查看两列之和"><a href="#查看两列之和" class="headerlink" title="查看两列之和"></a>查看两列之和</h3><pre><code>SELECT *,sal+comm FROM emp;（要包装两列类型都是数值类型）
+SELECT *,sal+IFNULL(comm,0) FROM emp;（有一列有数值为null时用这个）</code></pre><h3 id="给列名添加别名"><a href="#给列名添加别名" class="headerlink" title="给列名添加别名"></a>给列名添加别名</h3><pre><code>select*，sal+ifnull(comm,0)as total from emp;</code></pre><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><pre><code>举例
+（按年龄进行升序排序）
+select * from stu order by age asc ；
+（按年龄降序排序）
+SELECT * FROM stu ORDER BY age DESC;
+（查询所有雇员，按月薪降序排序，如果月薪相同时，按编号升序排序）
+SELECT * FROM emp ORDER BY sal DESC,empno ASC;</code></pre><h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><pre><code>聚合函数是用来做纵向运算的函数：
+COUNT()：统计指定列不为NULL的记录行数；
+MAX()：计算指定列的最大值，如果指定列是字符串类型，那么使用字符串排序运算；
+MIN()：计算指定列的最小值，如果指定列是字符串类型，那么使用字符串排序运算；
+SUM()：计算指定列的数值和，如果指定列类型不是数值类型，那么计算结果为0；
+AVG()：计算指定列的平均值，如果指定列类型不是数值类型，那么计算结果为0；</code></pre><h3 id="COUNT"><a href="#COUNT" class="headerlink" title="COUNT"></a>COUNT</h3><pre><code>当需要纵向统计时可以使用COUNT()。
+查询emp表中记录数：
+SELECT COUNT(*) AS cnt FROM emp;
 
-** ceil(x): 向上舍人
+查询emp表中有佣金的人数：
+SELECT COUNT(comm) cnt FROM emp;
+注意，因为count()函数中给出的是comm列，那么只统计comm列非NULL的行数。
 
-** floor(x)：向下舍人
+查询emp表中月薪大于2500的人数：
+SELECT COUNT(*) FROM emp
+WHERE sal &gt; 2500;
 
-** round(x)：四舍五入
+统计月薪与佣金之和大于2500元的人数：
+SELECT COUNT(*) AS cnt FROM emp WHERE sal+IFNULL(comm,0) &gt; 2500;
 
-** random()：得到随机数（伪随机数）
-    - 得到0-9的随机数
-        Math.random()*10
-        Math.floor（(Math.random()*10));</code></pre><h2 id="3-js的全局函数"><a href="#3-js的全局函数" class="headerlink" title="3.js的全局函数"></a>3.js的全局函数</h2><pre><code>* 由于不属于任何一个对象，直接写名称使用
+查询有佣金的人数，以及有领导的人数：
+SELECT COUNT(comm), COUNT(mgr) FROM emp;</code></pre><h3 id="SUM和AVG"><a href="#SUM和AVG" class="headerlink" title="SUM和AVG"></a>SUM和AVG</h3><pre><code>当需要纵向求和时使用sum()函数。
+查询所有雇员月薪和：
+SELECT SUM(sal) FROM emp;
 
-** eval() ： 执行js代码（如果字符串是一个js代码，使用方法直接执行）
-    **** var str = &quot;alert(&apos;1234&apos;);&quot;;
-    //alert(str);
-    eval(str);
+查询所有雇员月薪和，以及所有雇员佣金和：
+SELECT SUM(sal), SUM(comm) FROM emp;
 
-** encodeURI() ：对字符进行编码 
-    - %E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87aaa1234
+查询所有雇员月薪+佣金和：
+SELECT SUM(sal+IFNULL(comm,0)) FROM emp;
 
-   decodeURI()  ：对字符进行解码
+统计所有员工平均工资：
+SELECT SUM(sal), COUNT(sal) FROM emp;
+或者
+SELECT AVG(sal) FROM emp;</code></pre><h3 id="MAX和MIN"><a href="#MAX和MIN" class="headerlink" title="MAX和MIN"></a>MAX和MIN</h3><pre><code>查询最高工资和最低工资
+select MAX(sal),min(sal)from emp;</code></pre><h2 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h2><h3 id="分组查询-1"><a href="#分组查询-1" class="headerlink" title="分组查询"></a>分组查询</h3><pre><code>查询每个部门的部门编号和每个部门的工资和：
+SELECT deptno, SUM(sal)
+FROM emp
+GROUP BY deptno;</code></pre><h3 id="having子句"><a href="#having子句" class="headerlink" title="having子句"></a>having子句</h3><pre><code>查询工资总和大于9000的部门编号以及工资和
+注意，WHERE是对分组前记录的条件，如果某行记录没有满足WHERE子句的条件，那么这行记录不会参加分组；而HAVING是对分组后数据的约束。</code></pre><h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="LIMIT"></a>LIMIT</h2><pre><code>limit用来限定查询结果的起始行，以及总行数
+查询5行记录，起始行从0开始
+SELECT * FROM emp LIMIT 0, 5;</code></pre><h2 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h2><pre><code>创建表：定义列时指定主键：
+CREATE TABLE stu(
+    sid        CHAR(6) PRIMARY KEY,
+    sname    VARCHAR(20),
+    age        INT,
+    gender    VARCHAR(10) 
 
-   encodeURIComponent() 和 decodeURIComponent()
 
-** isNaN():判断当前字符串是否是数字
-    -- var str2 = &quot;aaaa&quot;;
-    alert(isNaN(str2));
-    *** 如果是数字，返回false
-    *** 如果不是数字，返回true
+创建表：定义列之后独立指定主键：
+CREATE TABLE stu(
+    sid        CHAR(6),
+    sname    VARCHAR(20),
+    age        INT,
+    gender    VARCHAR(10),
+    PRIMARY KEY(sid)
+);
 
-** parseInt()：类型转换
-    ** var str3 = &quot;123&quot;;
-    document.write(parseInt(str3)+1);</code></pre><h2 id="4-js里面的重载"><a href="#4-js里面的重载" class="headerlink" title="4.js里面的重载"></a>4.js里面的重载</h2><p>** 什么是重载？方法名相同，参数不同</p>
-<pre><code>** js的重载是否存在？ 不存在
-    ** 调用最后一个方法
-    ** 把传递的参数保存到 arguments数组里面
+修改表时指定主键：
+ALTER TABLE stu
+ADD PRIMARY KEY(sid);
+删除主键（只是删除主键约束，而不会删除主键列）：
+ALTER TABLE stu DROP PRIMARY KEY;</code></pre><h2 id="主键自增长"><a href="#主键自增长" class="headerlink" title="主键自增长"></a>主键自增长</h2><pre><code>创建表时设置主键自增长（主键必须是整型才可以自增长）：
+CREATE TABLE stu(
+    sid INT PRIMARY KEY AUTO_INCREMENT,
+    sname    VARCHAR(20),
+    age        INT,
+    gender    VARCHAR(10)
+);
+修改表时设置主键自增长：
+ALTER TABLE stu CHANGE sid sid INT AUTO_INCREMENT;</code></pre><h2 id="非空"><a href="#非空" class="headerlink" title="非空"></a>非空</h2><pre><code>指定非空约束：
+CREATE TABLE stu(
+    sid INT PRIMARY KEY AUTO_INCREMENT,
+    sname VARCHAR(10) NOT NULL,
+    age        INT,
+    gender    VARCHAR(10)
+);
+在指定了sname不能为空时，当不给sname设置值时，会报错</code></pre><h2 id="唯一"><a href="#唯一" class="headerlink" title="唯一"></a>唯一</h2><pre><code>CREATE TABLE tab_ab(
+    sid INT PRIMARY KEY AUTO_INCREMENT,
+    sname VARCHAR(10) UNIQUE
+);
+insert into sname (sid,sname) values(1001,&apos;zs&apos;);
+insert into sname (sid,sname) values(1001,&apos;zs&apos;);
+两次插入的相同的名字时，就会报错</code></pre><h2 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h2><pre><code>创建从表时指定外键
+CREATE TABLE t_section(
+    sid    INT PRIMARY KEY AUTO_INCREMENT,
+    sname    VARCHAR(30),
+    u_id    INT,
+    CONSTRAINT fk_t_user FOREIGN KEY(u_id) REFERENCES t_user(uid)
+);
 
-** js里面是否存在重载？(面试题目)
-    （1）js里面不存在重载。
-    （2）但是可以通过其他方式模拟重载的效果 （通过aruguments数组来实现）
+修改从表时指定外键
+ALTER TABLE t_section 
+ADD CONSTRAINT fk_t_user 
+FOREIGN KEY(u_id) 
+REFERENCES t_user(uid);
 
-    *** function add1() {
-        //比如传递的是两个参数
-        if(arguments.length == 2) {
-            return arguments[0]+arguments[1];
-
-        } else if (arguments.length == 3) {
-            return arguments[0]+arguments[1]+arguments[2];
-
-        } else if (arguments.length == 4) {
-
-            return arguments[0]+arguments[1]+arguments[2]+arguments[3];
-        } else {
-            return 0;
-        }
-    }</code></pre><h2 id="5-js的bom对象"><a href="#5-js的bom对象" class="headerlink" title="5.js的bom对象"></a>5.js的bom对象</h2><pre><code>** bom：broswer object model: 浏览器对象模型
-
-** 有哪些对象？
-*** navigator： 获取客户机的信息（浏览器的信息）
-    - navigator.appName
-    - document.write(navigator.appName);
-
-*** screen: 获取屏幕的信息
-    - document.write(screen.width);
-    document.write(&quot;&lt;br/&gt;&quot;);
-    document.write(screen.height);
-
-*** location: 请求url地址
-    - href属性
-    **** 获取到请求的url地址
-        - document.write(location.href);
-
-    **** 设置url地址
-        - 页面上安置一个按钮，按钮上绑定一个事件，当我点击这个按钮，页面可以跳转到另外一个页面
-        - location.href = &quot;hello.html&quot;;
-
-    **** &lt;input type=&quot;button&quot; value=&quot;tiaozhuan&quot; onclick=&quot;href1();&quot;/&gt;
-        - 鼠标点击事件  onclick=&quot;js的方法;&quot;
-
-*** history：请求的url的历史记录
-    - 创建三个页面
-        1、创建第一个页面 a.html 写一个超链接 到 b.html
-        2、创建b.html 超链接 到 c.html
-        3、创建c.html
-
-    - 到访问的上一个页面
-        history.back();
-        history.go(-1);
-
-    - 到访问的下一个页面
-        history.forward();
-        history.go(1);
-
-**** window（****）
-    * 窗口对象
-    * 顶层对象（所用的bom对象都是在window里面操作的）
-
-    ** 方法
-        - window.alert() : 页面弹出一个框，显示内容
-            ** 简写alert()
-
-        - confirm()： 确认框
-            - var flag = window.confirm(&quot;显示的内容&quot;);
-
-        - prompt()： 输入的对话框
-            - window.prompt(&quot;please input : &quot;,&quot;0&quot;);
-            - window.prompt(&quot;在显示的内容&quot;,&quot;输入框里面的默认值&quot;);
-
-        - 
-            ** open(&quot;打开的新窗口的地址url&quot;,&quot;&quot;,&quot;窗口特征，比如窗口宽度和高度&quot;) 
-            - 创建一个按钮，点击这个按钮，打开一个新的窗口
-            - window.open(&quot;hello.html&quot;,&quot;&quot;,&quot;width=200,height=100&quot;);
-
-        - close(): 关闭窗口(浏览器兼容性比较差)
-            - window.close();
-
-        - 做定时器 
-        ** setInterval(&quot;js代码&quot;,毫秒数)  1秒=1000毫秒
-            - 表示每三秒，执行一次alert方法
-            window.setInterval(&quot;alert(&apos;123&apos;);&quot;,3000);
-
-        ** setTimeout(&quot;js代码&quot;,毫秒数)
-            - 表示在毫秒数之后执行，但是只会执行一次
-
-            - 表示四秒之后执行js代码，只会执行一次
-            window.setTimeout(&quot;alert(&apos;abc&apos;);&quot;,4000);
-
-        ** clearInterval(): 清除setInterval设置的定时器
-            var id1 = setInterval(&quot;alert(&apos;123&apos;);&quot;,3000);//通过setInterval会有一个返回值
-            clearInterval(id1);
-
-        ** clearTimeout() : 清除setTimeout设置的定时器
-            var id2 = setTimeout(&quot;alert(&apos;abc&apos;);&quot;,4000);
-            clearTimeout(id2);</code></pre><h2 id="6-js的dom对象（-）"><a href="#6-js的dom对象（-）" class="headerlink" title="6.js的dom对象（****）"></a>6.js的dom对象（****）</h2><pre><code>* dom：document object model: 文档对象模型
-** 文档：
-    超文本文档（超文本标记文档） html 、xml
-** 对象：
-    提供了属性和方法
-** 模型：使用属性和方法操作超文本标记型文档
-
-*** 可以使用js里面的dom里面提供的对象，使用这些对象的属性和方法，对标记型文档进行操作
-
-*** 想要对标记型文档进行操作，首先需要 对标记型文档里面的所有内容封装成对象
-    -- 需要把html里面的标签、属性、文本内容都封装成对象
-
-*** 要想对标记型文档进行操作，解析标记型文档
-    - 画图分析，如何使用dom解析html
-
-*** 解析过程
-    根据html的层级结构，在内存中分配一个树形结构，需要把html中的每部分封装成对象，
-    - document对象：整个文档
-    - element对象：标签对象
-    - 属性对象
-    - 文本对象
-
-    -- Node节点对象：这个对象是这些对象的父对象
-        *** 如果在对象里面找不到想要的方法，这个时候到Node对象里面去找
-
-DOM模型有三种：
-    DOM level 1：将html文档封装成对象。
-    DOM level 2：在level 1的基础上添加新的功能，例如：对于事件和css样式的支持。
-    DOM level 3：支持xml1.0的一些新特性。
-
-* DHTML：是很多技术的简称
-    ** html: 封装数据
-    ** css：使用属性和属性值设置样式
-    ** dom：操作html文档（标记型文档）
-    ** javascript：专门指的是js的语法语句（ECMAScript）</code></pre><h2 id="7-document对象"><a href="#7-document对象" class="headerlink" title="7.document对象"></a>7.document对象</h2><pre><code>* 表示整个的文档
-
-** 常用方法
-    **** write()方法：
-        （1）向页面输出变量（值）
-        （2）向页面输出html代码
-        - var str = &quot;abc&quot;;
-        document.write(str);
-        document.write(&quot;&lt;hr/&gt;&quot;);
-
-    **** getElementById();
-        - 通过id得到元素（标签）
-        - //使用getElementById得到input标签
-        var input1 = document.getElementById(&quot;nameid&quot;);  //传递的参数是标签里面的id的值
-        //得到input里面的value值
-        alert(input1.name);   //标签对象.属性名称
-        //向input里面设置一个值value
-        input1.value = &quot;bbbbb&quot;;
-
-    **** getElementsByName();
-        - 通过标签的name的属性值得到标签
-        - 返回的是一个集合（数组）
-        - //使用getElementsByName得到input标签
-        var inputs = document.getElementsByName(&quot;name1&quot;);  //传递的参数是 标签里面的name的值
-        //alert(inputs.length);
-        //遍历数组
-        for(var i=0;i&lt;inputs.length;i++) {   //通过遍历数组，得到每个标签里面的具体的值
-            var input1 = inputs[i];  //每次循环得到input对象，赋值到input1里面
-            alert(input1.value);    //得到每个input标签里面的value值
-        }
-
-    **** getElementsByTagName(&quot;标签名称&quot;);
-        - 通过标签名称得到元素
-        - //演示getElementsByTagName
-        var inputs1 = document.getElementsByTagName(&quot;input&quot;);  //传递的参数，是标签名称
-        //alert(inputs1.length);
-        //遍历数组，得到每个input标签
-        for(var m=0;m&lt;inputs1.length;m++) {
-            //得到每个input标签
-            var input1 = inputs1[m];
-            //得到value值
-            alert(input1.value);
-        }
-
-    **** 注意地方
-        **** 只有一个标签，这个标签只能使用name获取到，这个使用，使用getElementsByName返回的是一个数组，
-        但是现在只有一个元素，这个时候不需要遍历，而是可以直接通过数组的下标获取到值
-        //通过name得到input标签
-        var inputs2 = document.getElementsByName(&quot;name11&quot;)[0];
-        alert(inputs2.value);
-
-        var inputss = document.getElementsByTagName(&quot;input&quot;)[0];
-        alert(inputss.value);</code></pre><h2 id="8-案例：window弹窗案例"><a href="#8-案例：window弹窗案例" class="headerlink" title="8.案例：window弹窗案例"></a>8.案例：window弹窗案例</h2><pre><code>- 实现过程
-    1、创建一个页面
-        ** 有两个输入项和一个按钮
-        ** 按钮上面有一个事件：弹出一个新窗口 open
-
-    2、创建弹出页面
-        ** 表格
-        ** 每一行有一个按钮和编号和姓名
-        ** 按钮上有一个事件：把当前的编号和姓名，赋值到第一个页面相应的位置
-
-        ****//实现s1方法
-        function s1(num1,name1) {
-            //需要把num1和name1赋值到window页面
-            //跨页面的操作  opener：得到创建这个窗口的窗口 得到window页面
-            var pwin = window.opener; //得到window页面
-            pwin.document.getElementById(&quot;numid&quot;).value = num1;
-            pwin.document.getElementById(&quot;nameid&quot;).value = name1;
-            //关闭窗口
-            window.close();
-        }
-
-        －　opener:属性，获取创建当前窗口的窗口
-
-- 做这个案例时候会有一个问题
-    *** 由于我们现在访问的是本地文件，js安全性，谷歌浏览器安全级别很高，不允许访问本地文件
-    *** 在实际开发中，没有这样的问题，实际中不可能访问本地的文件。
-    *** http://www.baidu.com</code></pre><p><img src="https://note.youdao.com/yws/public/resource/a8445ea42aaea64e08048c9a11f6b618/xmlnote/WEBRESOURCE60955744b4c8565a13929b8aaf628bf2/33" alt="弹窗"></p>
-<p><img src="https://note.youdao.com/yws/public/resource/1f0efc6af0524588cabf918a46f7e8c9/xmlnote/WEBRESOURCEb392c76bd14e286a7341275565df4ef3/37" alt="user"></p>
-
+删除外键
+ALTER TABLE t_section
+DROP FOREIGN KEY fk_t_user;</code></pre>
       
 	
 
@@ -490,7 +350,7 @@ DOM模型有三种：
 	<br>
 	
     <strong>本文链接：</strong>
-    https://github.com/ggzhi/ggzhi.github.io/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/
+    https://github.com/ggzhi/ggzhi.github.io/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/
     <br>
     <strong>版权声明：</strong>
     本作品采用
@@ -543,7 +403,7 @@ DOM模型有三种：
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
@@ -599,7 +459,7 @@ DOM模型有三种：
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -617,7 +477,7 @@ DOM模型有三种：
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment{
-  id: 'Wed Oct 23 2019 16:29:52 GMT+0800',
+  id: 'Sun Nov 10 2019 17:32:13 GMT+0800',
   owner: "ggzhi",
   repo: "ggzhi.github.io",
   oauth: {
@@ -638,18 +498,9 @@ gitment.render('git')
   
 <nav id="article-nav">
   
-    <a href="/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          javaWeb xml笔记
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/10/22/%E5%85%B3%E4%BA%8EChrome%E4%B8%80%E6%AC%BE%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于Chrome一款特别好用的插件</div>
+    <a href="/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javaweb xml学习笔记二</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -676,7 +527,7 @@ gitment.render('git')
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-js的Date对象"><span class="toc-number">1.</span> <span class="toc-text">1.js的Date对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-js的Math对象"><span class="toc-number">2.</span> <span class="toc-text">2.js的Math对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-js的全局函数"><span class="toc-number">3.</span> <span class="toc-text">3.js的全局函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-js里面的重载"><span class="toc-number">4.</span> <span class="toc-text">4.js里面的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-js的bom对象"><span class="toc-number">5.</span> <span class="toc-text">5.js的bom对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-js的dom对象（-）"><span class="toc-number">6.</span> <span class="toc-text">6.js的dom对象（****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-document对象"><span class="toc-number">7.</span> <span class="toc-text">7.document对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-案例：window弹窗案例"><span class="toc-number">8.</span> <span class="toc-text">8.案例：window弹窗案例</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本操作："><span class="toc-number">1.</span> <span class="toc-text">基本操作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作数据库"><span class="toc-number">2.</span> <span class="toc-text">操作数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作表"><span class="toc-number">3.</span> <span class="toc-text">操作表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入数据"><span class="toc-number">4.</span> <span class="toc-text">插入数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改数据"><span class="toc-number">5.</span> <span class="toc-text">修改数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除数据"><span class="toc-number">6.</span> <span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查询表中所有列"><span class="toc-number">7.</span> <span class="toc-text">查询表中所有列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查询指定列"><span class="toc-number">8.</span> <span class="toc-text">查询指定列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#条件查询"><span class="toc-number">9.</span> <span class="toc-text">条件查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模糊查询"><span class="toc-number">10.</span> <span class="toc-text">模糊查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字段控制查询"><span class="toc-number">11.</span> <span class="toc-text">字段控制查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#去除重复记录"><span class="toc-number">11.1.</span> <span class="toc-text">去除重复记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看两列之和"><span class="toc-number">11.2.</span> <span class="toc-text">查看两列之和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#给列名添加别名"><span class="toc-number">11.3.</span> <span class="toc-text">给列名添加别名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排序"><span class="toc-number">12.</span> <span class="toc-text">排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#聚合函数"><span class="toc-number">13.</span> <span class="toc-text">聚合函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#COUNT"><span class="toc-number">13.1.</span> <span class="toc-text">COUNT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SUM和AVG"><span class="toc-number">13.2.</span> <span class="toc-text">SUM和AVG</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAX和MIN"><span class="toc-number">13.3.</span> <span class="toc-text">MAX和MIN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分组查询"><span class="toc-number">14.</span> <span class="toc-text">分组查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分组查询-1"><span class="toc-number">14.1.</span> <span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#having子句"><span class="toc-number">14.2.</span> <span class="toc-text">having子句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LIMIT"><span class="toc-number">15.</span> <span class="toc-text">LIMIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主键"><span class="toc-number">16.</span> <span class="toc-text">主键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主键自增长"><span class="toc-number">17.</span> <span class="toc-text">主键自增长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非空"><span class="toc-number">18.</span> <span class="toc-text">非空</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#唯一"><span class="toc-number">19.</span> <span class="toc-text">唯一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外键"><span class="toc-number">20.</span> <span class="toc-text">外键</span></a></li></ol>
                     </div>
                 </span>
             </div>

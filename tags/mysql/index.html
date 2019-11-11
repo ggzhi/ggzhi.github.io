@@ -6,21 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>javaWeb之js对象和Dom学习日记2 | 黄广志的博客</title>
+  <title>Tag: mysql | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.js的Date对象** 在java里面获取当前时间        Date date = new Date();        &#x2F;&#x2F;格式化        &#x2F;&#x2F;toLocaleString()   &#x2F;&#x2F;">
-<meta name="keywords" content="javaweb">
-<meta property="og:type" content="article">
-<meta property="og:title" content="javaWeb之js对象和Dom学习日记2">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;23&#x2F;javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02&#x2F;index.html">
+  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
+<meta name="keywords" content="java，前端博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄广志的博客">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;tags&#x2F;mysql&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="1.js的Date对象** 在java里面获取当前时间        Date date = new Date();        &#x2F;&#x2F;格式化        &#x2F;&#x2F;toLocaleString()   &#x2F;&#x2F;">
+<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;a8445ea42aaea64e08048c9a11f6b618&#x2F;xmlnote&#x2F;WEBRESOURCE60955744b4c8565a13929b8aaf628bf2&#x2F;33">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;1f0efc6af0524588cabf918a46f7e8c9&#x2F;xmlnote&#x2F;WEBRESOURCEb392c76bd14e286a7341275565df4ef3&#x2F;37">
-<meta property="og:updated_time" content="2019-10-23T14:14:59.158Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;a8445ea42aaea64e08048c9a11f6b618&#x2F;xmlnote&#x2F;WEBRESOURCE60955744b4c8565a13929b8aaf628bf2&#x2F;33">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
   
@@ -156,585 +152,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-javaWeb之js对象和Dom学习日记2" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      javaWeb之js对象和Dom学习日记2
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+
+<a href="/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2019-11-10T09:32:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-10</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">mysql常用命令</a>
     </h1>
   
 
-        
-        
-
-<a href="/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/" class="archive-article-date">
-  	<time datetime="2019-10-23T08:29:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-23</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-js的Date对象"><a href="#1-js的Date对象" class="headerlink" title="1.js的Date对象"></a>1.js的Date对象</h2><p>** 在java里面获取当前时间<br>        Date date = new Date();<br>        //格式化<br>        //toLocaleString()   //</p>
-<a id="more"></a>
-<pre><code>** js里面获取当前时间
-    var date = new Date();
-    //获取当前时间
-    var date = new Date();
-    document.write(date);  // 
-
-    //转换成习惯的格式
-    document.write(&quot;&lt;hr/&gt;&quot;);
-    document.write(date.toLocaleString());
-
-** 获取当前的年方法
-    getFullYear()：得到当前的年
-        **** document.write(&quot;year: &quot;+date.getFullYear());
-
-** 获取当前的月方法
-    getMonth()：获取当前的月
-        *** 返回的是 0-11月，如果想要得到准确的值，加1
-        **** var date1 = date.getMonth()+1;
-        document.write(&quot;month: &quot;+date1);
-
-** 获取当前的星期
-    getDay()：星期,返回的是 (0 ~ 6)
-    ** 外国朋友，把星期日作为一周的第一天，星期日返回的是 0
-       而星期一到星期六 返回的是 1-6
-    ** document.write(&quot;week: &quot;+date.getDay());
-
-** 获取当前的日
-    getDate()：得到当前的天 1-31
-    ** document.write(&quot;day: &quot;+date.getDate());
-
-** 获取当前的小时
-    getHours()：获取小时
-    ** document.write(&quot;hour: &quot;+date.getHours());
-
-** 获取当前的分钟
-    getMinutes()：分钟
-    ** document.write(&quot;minute: &quot;+date.getMinutes());
-
-** 获取当前的秒
-    getSeconds(): 秒
-    ** document.write(&quot;second: &quot;+date.getSeconds());
-
-** 获取毫秒数
-    getTime()
-    返回的是1970 1 1 至今的毫秒数
-
-    ** 应用场景：
-        *** 使用毫秒数处理缓存的效果（不有缓存）
-            http://www.baidu.com?毫秒数</code></pre><h2 id="2-js的Math对象"><a href="#2-js的Math对象" class="headerlink" title="2.js的Math对象"></a>2.js的Math对象</h2><pre><code>* 数学的运算
-** 里面的都是静态方法，使用可以直接使用 Math.方法()
-
-** ceil(x): 向上舍人
-
-** floor(x)：向下舍人
-
-** round(x)：四舍五入
-
-** random()：得到随机数（伪随机数）
-    - 得到0-9的随机数
-        Math.random()*10
-        Math.floor（(Math.random()*10));</code></pre><h2 id="3-js的全局函数"><a href="#3-js的全局函数" class="headerlink" title="3.js的全局函数"></a>3.js的全局函数</h2><pre><code>* 由于不属于任何一个对象，直接写名称使用
-
-** eval() ： 执行js代码（如果字符串是一个js代码，使用方法直接执行）
-    **** var str = &quot;alert(&apos;1234&apos;);&quot;;
-    //alert(str);
-    eval(str);
-
-** encodeURI() ：对字符进行编码 
-    - %E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87aaa1234
-
-   decodeURI()  ：对字符进行解码
-
-   encodeURIComponent() 和 decodeURIComponent()
-
-** isNaN():判断当前字符串是否是数字
-    -- var str2 = &quot;aaaa&quot;;
-    alert(isNaN(str2));
-    *** 如果是数字，返回false
-    *** 如果不是数字，返回true
-
-** parseInt()：类型转换
-    ** var str3 = &quot;123&quot;;
-    document.write(parseInt(str3)+1);</code></pre><h2 id="4-js里面的重载"><a href="#4-js里面的重载" class="headerlink" title="4.js里面的重载"></a>4.js里面的重载</h2><p>** 什么是重载？方法名相同，参数不同</p>
-<pre><code>** js的重载是否存在？ 不存在
-    ** 调用最后一个方法
-    ** 把传递的参数保存到 arguments数组里面
-
-** js里面是否存在重载？(面试题目)
-    （1）js里面不存在重载。
-    （2）但是可以通过其他方式模拟重载的效果 （通过aruguments数组来实现）
-
-    *** function add1() {
-        //比如传递的是两个参数
-        if(arguments.length == 2) {
-            return arguments[0]+arguments[1];
-
-        } else if (arguments.length == 3) {
-            return arguments[0]+arguments[1]+arguments[2];
-
-        } else if (arguments.length == 4) {
-
-            return arguments[0]+arguments[1]+arguments[2]+arguments[3];
-        } else {
-            return 0;
-        }
-    }</code></pre><h2 id="5-js的bom对象"><a href="#5-js的bom对象" class="headerlink" title="5.js的bom对象"></a>5.js的bom对象</h2><pre><code>** bom：broswer object model: 浏览器对象模型
-
-** 有哪些对象？
-*** navigator： 获取客户机的信息（浏览器的信息）
-    - navigator.appName
-    - document.write(navigator.appName);
-
-*** screen: 获取屏幕的信息
-    - document.write(screen.width);
-    document.write(&quot;&lt;br/&gt;&quot;);
-    document.write(screen.height);
-
-*** location: 请求url地址
-    - href属性
-    **** 获取到请求的url地址
-        - document.write(location.href);
-
-    **** 设置url地址
-        - 页面上安置一个按钮，按钮上绑定一个事件，当我点击这个按钮，页面可以跳转到另外一个页面
-        - location.href = &quot;hello.html&quot;;
-
-    **** &lt;input type=&quot;button&quot; value=&quot;tiaozhuan&quot; onclick=&quot;href1();&quot;/&gt;
-        - 鼠标点击事件  onclick=&quot;js的方法;&quot;
-
-*** history：请求的url的历史记录
-    - 创建三个页面
-        1、创建第一个页面 a.html 写一个超链接 到 b.html
-        2、创建b.html 超链接 到 c.html
-        3、创建c.html
-
-    - 到访问的上一个页面
-        history.back();
-        history.go(-1);
-
-    - 到访问的下一个页面
-        history.forward();
-        history.go(1);
-
-**** window（****）
-    * 窗口对象
-    * 顶层对象（所用的bom对象都是在window里面操作的）
-
-    ** 方法
-        - window.alert() : 页面弹出一个框，显示内容
-            ** 简写alert()
-
-        - confirm()： 确认框
-            - var flag = window.confirm(&quot;显示的内容&quot;);
-
-        - prompt()： 输入的对话框
-            - window.prompt(&quot;please input : &quot;,&quot;0&quot;);
-            - window.prompt(&quot;在显示的内容&quot;,&quot;输入框里面的默认值&quot;);
-
-        - 
-            ** open(&quot;打开的新窗口的地址url&quot;,&quot;&quot;,&quot;窗口特征，比如窗口宽度和高度&quot;) 
-            - 创建一个按钮，点击这个按钮，打开一个新的窗口
-            - window.open(&quot;hello.html&quot;,&quot;&quot;,&quot;width=200,height=100&quot;);
-
-        - close(): 关闭窗口(浏览器兼容性比较差)
-            - window.close();
-
-        - 做定时器 
-        ** setInterval(&quot;js代码&quot;,毫秒数)  1秒=1000毫秒
-            - 表示每三秒，执行一次alert方法
-            window.setInterval(&quot;alert(&apos;123&apos;);&quot;,3000);
-
-        ** setTimeout(&quot;js代码&quot;,毫秒数)
-            - 表示在毫秒数之后执行，但是只会执行一次
-
-            - 表示四秒之后执行js代码，只会执行一次
-            window.setTimeout(&quot;alert(&apos;abc&apos;);&quot;,4000);
-
-        ** clearInterval(): 清除setInterval设置的定时器
-            var id1 = setInterval(&quot;alert(&apos;123&apos;);&quot;,3000);//通过setInterval会有一个返回值
-            clearInterval(id1);
-
-        ** clearTimeout() : 清除setTimeout设置的定时器
-            var id2 = setTimeout(&quot;alert(&apos;abc&apos;);&quot;,4000);
-            clearTimeout(id2);</code></pre><h2 id="6-js的dom对象（-）"><a href="#6-js的dom对象（-）" class="headerlink" title="6.js的dom对象（****）"></a>6.js的dom对象（****）</h2><pre><code>* dom：document object model: 文档对象模型
-** 文档：
-    超文本文档（超文本标记文档） html 、xml
-** 对象：
-    提供了属性和方法
-** 模型：使用属性和方法操作超文本标记型文档
-
-*** 可以使用js里面的dom里面提供的对象，使用这些对象的属性和方法，对标记型文档进行操作
-
-*** 想要对标记型文档进行操作，首先需要 对标记型文档里面的所有内容封装成对象
-    -- 需要把html里面的标签、属性、文本内容都封装成对象
-
-*** 要想对标记型文档进行操作，解析标记型文档
-    - 画图分析，如何使用dom解析html
-
-*** 解析过程
-    根据html的层级结构，在内存中分配一个树形结构，需要把html中的每部分封装成对象，
-    - document对象：整个文档
-    - element对象：标签对象
-    - 属性对象
-    - 文本对象
-
-    -- Node节点对象：这个对象是这些对象的父对象
-        *** 如果在对象里面找不到想要的方法，这个时候到Node对象里面去找
-
-DOM模型有三种：
-    DOM level 1：将html文档封装成对象。
-    DOM level 2：在level 1的基础上添加新的功能，例如：对于事件和css样式的支持。
-    DOM level 3：支持xml1.0的一些新特性。
-
-* DHTML：是很多技术的简称
-    ** html: 封装数据
-    ** css：使用属性和属性值设置样式
-    ** dom：操作html文档（标记型文档）
-    ** javascript：专门指的是js的语法语句（ECMAScript）</code></pre><h2 id="7-document对象"><a href="#7-document对象" class="headerlink" title="7.document对象"></a>7.document对象</h2><pre><code>* 表示整个的文档
-
-** 常用方法
-    **** write()方法：
-        （1）向页面输出变量（值）
-        （2）向页面输出html代码
-        - var str = &quot;abc&quot;;
-        document.write(str);
-        document.write(&quot;&lt;hr/&gt;&quot;);
-
-    **** getElementById();
-        - 通过id得到元素（标签）
-        - //使用getElementById得到input标签
-        var input1 = document.getElementById(&quot;nameid&quot;);  //传递的参数是标签里面的id的值
-        //得到input里面的value值
-        alert(input1.name);   //标签对象.属性名称
-        //向input里面设置一个值value
-        input1.value = &quot;bbbbb&quot;;
-
-    **** getElementsByName();
-        - 通过标签的name的属性值得到标签
-        - 返回的是一个集合（数组）
-        - //使用getElementsByName得到input标签
-        var inputs = document.getElementsByName(&quot;name1&quot;);  //传递的参数是 标签里面的name的值
-        //alert(inputs.length);
-        //遍历数组
-        for(var i=0;i&lt;inputs.length;i++) {   //通过遍历数组，得到每个标签里面的具体的值
-            var input1 = inputs[i];  //每次循环得到input对象，赋值到input1里面
-            alert(input1.value);    //得到每个input标签里面的value值
-        }
-
-    **** getElementsByTagName(&quot;标签名称&quot;);
-        - 通过标签名称得到元素
-        - //演示getElementsByTagName
-        var inputs1 = document.getElementsByTagName(&quot;input&quot;);  //传递的参数，是标签名称
-        //alert(inputs1.length);
-        //遍历数组，得到每个input标签
-        for(var m=0;m&lt;inputs1.length;m++) {
-            //得到每个input标签
-            var input1 = inputs1[m];
-            //得到value值
-            alert(input1.value);
-        }
-
-    **** 注意地方
-        **** 只有一个标签，这个标签只能使用name获取到，这个使用，使用getElementsByName返回的是一个数组，
-        但是现在只有一个元素，这个时候不需要遍历，而是可以直接通过数组的下标获取到值
-        //通过name得到input标签
-        var inputs2 = document.getElementsByName(&quot;name11&quot;)[0];
-        alert(inputs2.value);
-
-        var inputss = document.getElementsByTagName(&quot;input&quot;)[0];
-        alert(inputss.value);</code></pre><h2 id="8-案例：window弹窗案例"><a href="#8-案例：window弹窗案例" class="headerlink" title="8.案例：window弹窗案例"></a>8.案例：window弹窗案例</h2><pre><code>- 实现过程
-    1、创建一个页面
-        ** 有两个输入项和一个按钮
-        ** 按钮上面有一个事件：弹出一个新窗口 open
-
-    2、创建弹出页面
-        ** 表格
-        ** 每一行有一个按钮和编号和姓名
-        ** 按钮上有一个事件：把当前的编号和姓名，赋值到第一个页面相应的位置
-
-        ****//实现s1方法
-        function s1(num1,name1) {
-            //需要把num1和name1赋值到window页面
-            //跨页面的操作  opener：得到创建这个窗口的窗口 得到window页面
-            var pwin = window.opener; //得到window页面
-            pwin.document.getElementById(&quot;numid&quot;).value = num1;
-            pwin.document.getElementById(&quot;nameid&quot;).value = name1;
-            //关闭窗口
-            window.close();
-        }
-
-        －　opener:属性，获取创建当前窗口的窗口
-
-- 做这个案例时候会有一个问题
-    *** 由于我们现在访问的是本地文件，js安全性，谷歌浏览器安全级别很高，不允许访问本地文件
-    *** 在实际开发中，没有这样的问题，实际中不可能访问本地的文件。
-    *** http://www.baidu.com</code></pre><p><img src="https://note.youdao.com/yws/public/resource/a8445ea42aaea64e08048c9a11f6b618/xmlnote/WEBRESOURCE60955744b4c8565a13929b8aaf628bf2/33" alt="弹窗"></p>
-<p><img src="https://note.youdao.com/yws/public/resource/1f0efc6af0524588cabf918a46f7e8c9/xmlnote/WEBRESOURCEb392c76bd14e286a7341275565df4ef3/37" alt="user"></p>
-
-      
-	
-
-  <div class="declare">
-    <strong>本文作者：</strong>
-    
-      黄广志
-    
-
-	<br>
-	
-    <strong>本文链接：</strong>
-    https://github.com/ggzhi/ggzhi.github.io/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/
-    <br>
-    <strong>版权声明：</strong>
-    本作品采用
-    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-    进行许可。转载请注明出处！
-    
-      <br>
-      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-    
-  </div>
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zhifubao.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/23/javaWeb%E4%B9%8Bjs%E5%AF%B9%E8%B1%A1%E5%92%8CDom%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B02/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-<div  id="git"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment{
-  id: 'Wed Oct 23 2019 16:29:52 GMT+0800',
-  owner: "ggzhi",
-  repo: "ggzhi.github.io",
-  oauth: {
-     client_id: "b0b1a69e70cc2bbdf8d9",
-     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
-},
-})
-
-gitment.render('git')
-</script>
-
-
-
-
-
-
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          javaWeb xml笔记
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/10/22/%E5%85%B3%E4%BA%8EChrome%E4%B8%80%E6%AC%BE%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">关于Chrome一款特别好用的插件</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-js的Date对象"><span class="toc-number">1.</span> <span class="toc-text">1.js的Date对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-js的Math对象"><span class="toc-number">2.</span> <span class="toc-text">2.js的Math对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-js的全局函数"><span class="toc-number">3.</span> <span class="toc-text">3.js的全局函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-js里面的重载"><span class="toc-number">4.</span> <span class="toc-text">4.js里面的重载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-js的bom对象"><span class="toc-number">5.</span> <span class="toc-text">5.js的bom对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-js的dom对象（-）"><span class="toc-number">6.</span> <span class="toc-text">6.js的dom对象（****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-document对象"><span class="toc-number">7.</span> <span class="toc-text">7.document对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-案例：window弹窗案例"><span class="toc-number">8.</span> <span class="toc-text">8.案例：window弹窗案例</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
-      <div class="valine_comment"></div>
-<!--载入js，在</body>之前插入即可-->
-<!--Leancloud 操作库:-->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!--Valine 的核心代码库-->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-  var notify = 'true' == true ? true : false;
-  var verify = 'false' == true ? true : false;
-  new Valine({
-      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-      av: AV,
-      el: '.valine_comment',
-      emoticon_url: 'https://cloud.panjunwen.com/alu',
-      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
-      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
-      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
-      placeholder: '有错误希望大家评论指出来呀？'
-    });
-</script>
 
     
-  
-  
-  
-
-  
-
-  
-    <section id="comments">
-      <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-    </section>
-  
-
-  
 
 
           </div>
@@ -757,9 +230,9 @@ gitment.render('git')
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: 是,
 		toc_hide_index: true,
