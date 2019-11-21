@@ -181,35 +181,8 @@
 int a = 3;
 int b = 4;
 定义两个变量a和b，要做位运算，首先我们要把数据转换成二进制
-我们对照8421码，可以得出</code></pre><p><img src="http://m.qpic.cn/psb?/V117bTPi1RfnST/C..Mfao942eXl20yySMtKX8RhoTXlT8mMGpulP.lh6Y!/b/dLYAAAAAAAAA&bo=3QIQAd0CEAEDCSw!&rf=viewer_4" alt="8421"></p>
-<pre><code>又因为int类型为4个字节，所以为
-00000000 00000000 00000000 00000011
-00000000 00000000 00000000 00000100
-
-&amp;位与运算，有0则0 （a&amp;b）
-00000000 00000000 00000000 00000000
-结果为0（对照8421码）
-
-|位或运算，有1则1，（a|b）
-00000000 00000000 00000000 000000111
-结果为7
-
-^位导或运算，相同为0，不同为1 ，(a^b)
-00000000 00000000 00000000 000000111
-结果为7
-
-~按位取反运算符:0变1 1变0 （a~）
-我们先拿到a的2进制
-00000000 00000000 00000000 00000011
-0变1,1变0
-11111111 11111111 11111111 11111100
-现在是补码，求原码，我们现在要先求反码
-反码为（补码减1）
-11111111 11111111 11111111 11111011
-原码为（1变0,0变1）
-00000000 00000000 00000000 00000100
-对照8421码得
-结果为-4</code></pre>
+我们对照8421码，可以得出</code></pre>
+        
       
 	
 
@@ -1100,10 +1073,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">javaSe基础</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
@@ -1112,15 +1081,19 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">javaSe基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color1">浏览器插件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">浏览器插件</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
             
             <div class="clearfix"></div>
