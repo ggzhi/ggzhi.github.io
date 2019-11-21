@@ -6,17 +6,16 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>mysql常用命令 | 黄广志的博客</title>
+  <title>Archives | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="基本操作：查看所有数据库名称：show databases; 切换数据库：USE mydb1，切换到mydb1数据库；">
-<meta name="keywords" content="mysql">
-<meta property="og:type" content="article">
-<meta property="og:title" content="mysql常用命令">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;11&#x2F;10&#x2F;mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4&#x2F;index.html">
+  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
+<meta name="keywords" content="java，前端博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄广志的博客">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;archives&#x2F;page&#x2F;2&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="基本操作：查看所有数据库名称：show databases; 切换数据库：USE mydb1，切换到mydb1数据库；">
+<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-11T06:53:10.666Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
@@ -153,447 +152,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-mysql常用命令" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      mysql常用命令
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+
+<a href="/2019/10/20/hello-world/" class="archive-article-date">
+  	<time datetime="2019-10-20T00:01:59.237Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-20</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/10/20/hello-world/">Hello World</a>
     </h1>
   
 
-        
-        
+        <div class="article-info info-on-right">
+          
+          
 
-<a href="/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
-  	<time datetime="2019-11-10T09:32:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-10</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="基本操作："><a href="#基本操作：" class="headerlink" title="基本操作："></a>基本操作：</h2><pre><code>查看所有数据库名称：show databases;
-切换数据库：USE mydb1，切换到mydb1数据库；</code></pre><a id="more"></a>
-<h2 id="操作数据库"><a href="#操作数据库" class="headerlink" title="操作数据库"></a>操作数据库</h2><pre><code> 创建数据库：CREATE DATABASE [IF NOT EXISTS] mydb1； 
-加上if not exists ，在名为mydb1的数据库不存在时创建该库，这样可以避免报错
-
-  删除数据库：DROP DATABASE [IF EXISTS] mydb1；
-删除mydb1的数据库，如果加上if exists，如果这个数据库不存在，则会报错，反之，不会报错
-
-  修改数据库编码：ALTER DATABASE mydb1 CHARACTER SET utf8</code></pre><h2 id="操作表"><a href="#操作表" class="headerlink" title="操作表"></a>操作表</h2><pre><code>创建表：CREATE TABLE 表名（
-    列名 列类型    
-    列名 列类型
-
-）
- 例如：CREATE TABLE stu (
-    sname varchar(20),
-    sage int ,
-)
-
-查看当前表数据库的所有表名称：show tables;
-查看指定表的创建语句：show create table stu;
-查看表结构：desc stu;
-删除表：drop table stu；
-
-
-1.    修改之添加列：给stu表添加classname列：
-ALTER TABLE stu ADD (classname varchar(100));
-2.    修改之修改列类型：修改stu表的gender列类型为CHAR(2)：
-ALTER TABLE stu MODIFY gender CHAR(2);
-3.    修改之修改列名：修改stu表的gender列名为sex：
-ALTER TABLE stu change gender sex CHAR(2);
-4.    修改之删除列：删除stu表的classname列：
-ALTER TABLE stu DROP classname;
-5.    修改之修改表名称：修改stu表名称为student：
-ALTER TABLE stu RENAME TO student;</code></pre><h2 id="插入数据"><a href="#插入数据" class="headerlink" title="插入数据"></a>插入数据</h2><pre><code>insert into 表名（sname,sage,sbirthday）values(&apos;张三&apos;，&apos;12&apos;,&apos;19970620&apos;);</code></pre><h2 id="修改数据"><a href="#修改数据" class="headerlink" title="修改数据"></a>修改数据</h2><pre><code>update 表名 set 列名1=值1，列名n=值n where 条件
-
-update stu set sname=&apos;lisi&apos;,sage=&apos;22&apos;,sbirthday=&apos;19970630&apos;where sname=&apos;zhangsan&apos;;</code></pre><h2 id="删除数据"><a href="#删除数据" class="headerlink" title="删除数据"></a>删除数据</h2><pre><code>delete from 表名 where 条件
-delete from stu where sname=&apos;lisi&apos;;
-
-truncate table 表名
-truncate table stu；</code></pre><h2 id="查询表中所有列"><a href="#查询表中所有列" class="headerlink" title="查询表中所有列"></a>查询表中所有列</h2><pre><code>select * from stu；</code></pre><h2 id="查询指定列"><a href="#查询指定列" class="headerlink" title="查询指定列"></a>查询指定列</h2><pre><code>select sid，sname，age from stu；</code></pre><h2 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h2><pre><code>=、!=、&lt;&gt;、&lt;、&lt;=、&gt;、&gt;=；
-BETWEEN…AND；
-IN(set)；
-IS NULL；
-AND；
-OR；
-NOT；
-1.举例：
-    再stu下查询性别为女并且年龄小于50的记录
-    select * from stu where sex=&apos;nv&apos; and age&lt;50;</code></pre><h2 id="模糊查询"><a href="#模糊查询" class="headerlink" title="模糊查询"></a>模糊查询</h2><pre><code>当想要查询姓名中包含a字母的学生的学生时就需要使用模糊查询了，模糊查询需要使用关键字like’
-
-举例：查询姓名由5个字母构成的学生记录
-select  * from stu where sname like &apos;_____&apos;;
-模糊查询必须使用LIKE关键字。其中 “_”匹配任意一个字母，5个“_”表示5个任意字母。
-
-查询姓名以“z”开头的学生记录
-select * from stu where sname like  &apos;z%&apos;;
-其中“%”匹配0~n个任何字母。</code></pre><h2 id="字段控制查询"><a href="#字段控制查询" class="headerlink" title="字段控制查询"></a>字段控制查询</h2><h3 id="去除重复记录"><a href="#去除重复记录" class="headerlink" title="去除重复记录"></a>去除重复记录</h3><pre><code>select distinct sal from emp；</code></pre><h3 id="查看两列之和"><a href="#查看两列之和" class="headerlink" title="查看两列之和"></a>查看两列之和</h3><pre><code>SELECT *,sal+comm FROM emp;（要包装两列类型都是数值类型）
-SELECT *,sal+IFNULL(comm,0) FROM emp;（有一列有数值为null时用这个）</code></pre><h3 id="给列名添加别名"><a href="#给列名添加别名" class="headerlink" title="给列名添加别名"></a>给列名添加别名</h3><pre><code>select*，sal+ifnull(comm,0)as total from emp;</code></pre><h2 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h2><pre><code>举例
-（按年龄进行升序排序）
-select * from stu order by age asc ；
-（按年龄降序排序）
-SELECT * FROM stu ORDER BY age DESC;
-（查询所有雇员，按月薪降序排序，如果月薪相同时，按编号升序排序）
-SELECT * FROM emp ORDER BY sal DESC,empno ASC;</code></pre><h2 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h2><pre><code>聚合函数是用来做纵向运算的函数：
-COUNT()：统计指定列不为NULL的记录行数；
-MAX()：计算指定列的最大值，如果指定列是字符串类型，那么使用字符串排序运算；
-MIN()：计算指定列的最小值，如果指定列是字符串类型，那么使用字符串排序运算；
-SUM()：计算指定列的数值和，如果指定列类型不是数值类型，那么计算结果为0；
-AVG()：计算指定列的平均值，如果指定列类型不是数值类型，那么计算结果为0；</code></pre><h3 id="COUNT"><a href="#COUNT" class="headerlink" title="COUNT"></a>COUNT</h3><pre><code>当需要纵向统计时可以使用COUNT()。
-查询emp表中记录数：
-SELECT COUNT(*) AS cnt FROM emp;
-
-查询emp表中有佣金的人数：
-SELECT COUNT(comm) cnt FROM emp;
-注意，因为count()函数中给出的是comm列，那么只统计comm列非NULL的行数。
-
-查询emp表中月薪大于2500的人数：
-SELECT COUNT(*) FROM emp
-WHERE sal &gt; 2500;
-
-统计月薪与佣金之和大于2500元的人数：
-SELECT COUNT(*) AS cnt FROM emp WHERE sal+IFNULL(comm,0) &gt; 2500;
-
-查询有佣金的人数，以及有领导的人数：
-SELECT COUNT(comm), COUNT(mgr) FROM emp;</code></pre><h3 id="SUM和AVG"><a href="#SUM和AVG" class="headerlink" title="SUM和AVG"></a>SUM和AVG</h3><pre><code>当需要纵向求和时使用sum()函数。
-查询所有雇员月薪和：
-SELECT SUM(sal) FROM emp;
-
-查询所有雇员月薪和，以及所有雇员佣金和：
-SELECT SUM(sal), SUM(comm) FROM emp;
-
-查询所有雇员月薪+佣金和：
-SELECT SUM(sal+IFNULL(comm,0)) FROM emp;
-
-统计所有员工平均工资：
-SELECT SUM(sal), COUNT(sal) FROM emp;
-或者
-SELECT AVG(sal) FROM emp;</code></pre><h3 id="MAX和MIN"><a href="#MAX和MIN" class="headerlink" title="MAX和MIN"></a>MAX和MIN</h3><pre><code>查询最高工资和最低工资
-select MAX(sal),min(sal)from emp;</code></pre><h2 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h2><h3 id="分组查询-1"><a href="#分组查询-1" class="headerlink" title="分组查询"></a>分组查询</h3><pre><code>查询每个部门的部门编号和每个部门的工资和：
-SELECT deptno, SUM(sal)
-FROM emp
-GROUP BY deptno;</code></pre><h3 id="having子句"><a href="#having子句" class="headerlink" title="having子句"></a>having子句</h3><pre><code>查询工资总和大于9000的部门编号以及工资和
-注意，WHERE是对分组前记录的条件，如果某行记录没有满足WHERE子句的条件，那么这行记录不会参加分组；而HAVING是对分组后数据的约束。</code></pre><h2 id="LIMIT"><a href="#LIMIT" class="headerlink" title="LIMIT"></a>LIMIT</h2><pre><code>limit用来限定查询结果的起始行，以及总行数
-查询5行记录，起始行从0开始
-SELECT * FROM emp LIMIT 0, 5;</code></pre><h2 id="主键"><a href="#主键" class="headerlink" title="主键"></a>主键</h2><pre><code>创建表：定义列时指定主键：
-CREATE TABLE stu(
-    sid        CHAR(6) PRIMARY KEY,
-    sname    VARCHAR(20),
-    age        INT,
-    gender    VARCHAR(10) 
-
-
-创建表：定义列之后独立指定主键：
-CREATE TABLE stu(
-    sid        CHAR(6),
-    sname    VARCHAR(20),
-    age        INT,
-    gender    VARCHAR(10),
-    PRIMARY KEY(sid)
-);
-
-修改表时指定主键：
-ALTER TABLE stu
-ADD PRIMARY KEY(sid);
-删除主键（只是删除主键约束，而不会删除主键列）：
-ALTER TABLE stu DROP PRIMARY KEY;</code></pre><h2 id="主键自增长"><a href="#主键自增长" class="headerlink" title="主键自增长"></a>主键自增长</h2><pre><code>创建表时设置主键自增长（主键必须是整型才可以自增长）：
-CREATE TABLE stu(
-    sid INT PRIMARY KEY AUTO_INCREMENT,
-    sname    VARCHAR(20),
-    age        INT,
-    gender    VARCHAR(10)
-);
-修改表时设置主键自增长：
-ALTER TABLE stu CHANGE sid sid INT AUTO_INCREMENT;</code></pre><h2 id="非空"><a href="#非空" class="headerlink" title="非空"></a>非空</h2><pre><code>指定非空约束：
-CREATE TABLE stu(
-    sid INT PRIMARY KEY AUTO_INCREMENT,
-    sname VARCHAR(10) NOT NULL,
-    age        INT,
-    gender    VARCHAR(10)
-);
-在指定了sname不能为空时，当不给sname设置值时，会报错</code></pre><h2 id="唯一"><a href="#唯一" class="headerlink" title="唯一"></a>唯一</h2><pre><code>CREATE TABLE tab_ab(
-    sid INT PRIMARY KEY AUTO_INCREMENT,
-    sname VARCHAR(10) UNIQUE
-);
-insert into sname (sid,sname) values(1001,&apos;zs&apos;);
-insert into sname (sid,sname) values(1001,&apos;zs&apos;);
-两次插入的相同的名字时，就会报错</code></pre><h2 id="外键"><a href="#外键" class="headerlink" title="外键"></a>外键</h2><pre><code>创建从表时指定外键
-CREATE TABLE t_section(
-    sid    INT PRIMARY KEY AUTO_INCREMENT,
-    sname    VARCHAR(30),
-    u_id    INT,
-    CONSTRAINT fk_t_user FOREIGN KEY(u_id) REFERENCES t_user(uid)
-);
-
-修改从表时指定外键
-ALTER TABLE t_section 
-ADD CONSTRAINT fk_t_user 
-FOREIGN KEY(u_id) 
-REFERENCES t_user(uid);
-
-删除外键
-ALTER TABLE t_section
-DROP FOREIGN KEY fk_t_user;</code></pre>
-      
-	
-
-  <div class="declare">
-    <strong>本文作者：</strong>
-    
-      黄广志
-    
-
-	<br>
-	
-    <strong>本文链接：</strong>
-    https://github.com/ggzhi/ggzhi.github.io/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/
-    <br>
-    <strong>版权声明：</strong>
-    本作品采用
-    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-    进行许可。转载请注明出处！
-    
-      <br>
-      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-    
-  </div>
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zhifubao.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">mysql</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-<div  id="git"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment{
-  id: 'Sun Nov 10 2019 17:32:13 GMT+0800',
-  owner: "ggzhi",
-  repo: "ggzhi.github.io",
-  oauth: {
-     client_id: "b0b1a69e70cc2bbdf8d9",
-     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
-},
-})
-
-gitment.render('git')
-</script>
-
-
-
-
-
-
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/11/14/javaMail%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6%E7%9A%84%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          javaMail发送邮件的问题
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">javaweb xml学习笔记二</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本操作："><span class="toc-number">1.</span> <span class="toc-text">基本操作：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作数据库"><span class="toc-number">2.</span> <span class="toc-text">操作数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作表"><span class="toc-number">3.</span> <span class="toc-text">操作表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#插入数据"><span class="toc-number">4.</span> <span class="toc-text">插入数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#修改数据"><span class="toc-number">5.</span> <span class="toc-text">修改数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除数据"><span class="toc-number">6.</span> <span class="toc-text">删除数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查询表中所有列"><span class="toc-number">7.</span> <span class="toc-text">查询表中所有列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#查询指定列"><span class="toc-number">8.</span> <span class="toc-text">查询指定列</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#条件查询"><span class="toc-number">9.</span> <span class="toc-text">条件查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#模糊查询"><span class="toc-number">10.</span> <span class="toc-text">模糊查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#字段控制查询"><span class="toc-number">11.</span> <span class="toc-text">字段控制查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#去除重复记录"><span class="toc-number">11.1.</span> <span class="toc-text">去除重复记录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看两列之和"><span class="toc-number">11.2.</span> <span class="toc-text">查看两列之和</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#给列名添加别名"><span class="toc-number">11.3.</span> <span class="toc-text">给列名添加别名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排序"><span class="toc-number">12.</span> <span class="toc-text">排序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#聚合函数"><span class="toc-number">13.</span> <span class="toc-text">聚合函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#COUNT"><span class="toc-number">13.1.</span> <span class="toc-text">COUNT</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SUM和AVG"><span class="toc-number">13.2.</span> <span class="toc-text">SUM和AVG</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MAX和MIN"><span class="toc-number">13.3.</span> <span class="toc-text">MAX和MIN</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分组查询"><span class="toc-number">14.</span> <span class="toc-text">分组查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分组查询-1"><span class="toc-number">14.1.</span> <span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#having子句"><span class="toc-number">14.2.</span> <span class="toc-text">having子句</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LIMIT"><span class="toc-number">15.</span> <span class="toc-text">LIMIT</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主键"><span class="toc-number">16.</span> <span class="toc-text">主键</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主键自增长"><span class="toc-number">17.</span> <span class="toc-text">主键自增长</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非空"><span class="toc-number">18.</span> <span class="toc-text">非空</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#唯一"><span class="toc-number">19.</span> <span class="toc-text">唯一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#外键"><span class="toc-number">20.</span> <span class="toc-text">外键</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
-      <div class="valine_comment"></div>
-<!--载入js，在</body>之前插入即可-->
-<!--Leancloud 操作库:-->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!--Valine 的核心代码库-->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-  var notify = 'true' == true ? true : false;
-  var verify = 'false' == true ? true : false;
-  new Valine({
-      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-      av: AV,
-      el: '.valine_comment',
-      emoticon_url: 'https://cloud.panjunwen.com/alu',
-      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
-      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
-      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
-      placeholder: '有错误希望大家评论指出来呀？'
-    });
-</script>
 
     
-  
-  
-  
-
-  
-
-  
-    <section id="comments">
-      <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-    </section>
-  
-
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/">&amp;laquo; Prev</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -617,8 +223,8 @@ gitment.render('git')
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: 是,
