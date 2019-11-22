@@ -154,6 +154,130 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-java基础之方法重载" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">java基础之方法重载</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" class="archive-article-date">
+  	<time datetime="2019-11-22T02:34:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>方法重载：
+我们将名字相同，参数列表不同的两个（或多个）方法，
+称为重载
+方法重载的规则：
+1.方法名称必须相同
+2.参数列表必须不同
+3.方法的返回类型可以相同也可以不相同
+4.仅仅返回类型不同不足以成为方法的重载</code></pre><h3 id="错误版"><a href="#错误版" class="headerlink" title="错误版"></a>错误版</h3><pre><code>（下面这个就是方法功能相同，但是参数列表不同，我们又要要求方法见名知意，很明显，现在没有做到）
+public static void main(String[] args) {
+    System.out.println(sum(10,20));
+    System.out.println(sum2(10,20,30));
+    System.out.println(sum3(10,20,30,40));
+
+
+}
+//求两数的和
+public static int sum(int x,int y){
+    return (x + y);
+}
+//求三数的和
+public static int sum2(int x,int y ,int z){
+    return (x+y+z);
+}
+//求4数的和
+public static int sum3(int x,int y ,int z,int d){
+    return (x+y+z+d);
+}
+}</code></pre><h3 id="改进版（名字相同，但是参数列表不同，这就是重载）"><a href="#改进版（名字相同，但是参数列表不同，这就是重载）" class="headerlink" title="改进版（名字相同，但是参数列表不同，这就是重载）"></a>改进版（名字相同，但是参数列表不同，这就是重载）</h3><pre><code>public static void main(String[] args) {
+    System.out.println(sum(10,20));
+    System.out.println(sum(10,20,30));
+    System.out.println(sum(10,20,30,40));
+
+
+}
+//求两数的和
+public static int sum(int x,int y){
+    return (x + y);
+}
+//求三数的和
+public static int sum(int x,int y ,int z){
+    return (x+y+z);
+}
+//求4数的和
+public static int sum(int x,int y ,int z,int d){
+    return (x+y+z+d);
+}
+}</code></pre>
+      
+	
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">java基础之方法重载</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="ew-逻辑思维题" class="article article-type-ew  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -872,85 +996,6 @@ int b = 4;
 
 
   
-    <article id="post-javaWeb之JS学习日记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/22/javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/">javaWeb之JS学习日记</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2019/10/22/javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/" class="archive-article-date">
-  	<time datetime="2019-10-22T10:53:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1-js的创建对象"><a href="#1-js的创建对象" class="headerlink" title="1.js的创建对象"></a>1.js的创建对象</h2>
-        
-      
-	
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/22/javaWeb%E4%B9%8BJS%E5%AD%A6%E4%B9%A0%E6%97%A5%E8%AE%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1073,7 +1118,7 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">java</a>
+                <a href="javascript:void(0)" class="js-tag color4">javaSe基础</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1081,11 +1126,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">java</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">javaSe基础</a>
+                <a href="javascript:void(0)" class="js-tag color2">java基础之方法重载</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1093,11 +1142,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">逻辑思维题</a>
+                <a href="javascript:void(0)" class="js-tag color1">浏览器插件</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">浏览器插件</a>
+                <a href="javascript:void(0)" class="js-tag color1">逻辑思维题</a>
               </li>
             
             <div class="clearfix"></div>

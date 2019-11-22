@@ -6,16 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>Tag: 浏览器插件 | 黄广志的博客</title>
+  <title>java基础之方法重载 | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
-<meta name="keywords" content="java，前端博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="黄广志的博客">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;tags&#x2F;%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6&#x2F;index.html">
+  <meta name="description" content="方法重载： 我们将名字相同，参数列表不同的两个（或多个）方法， 称为重载 方法重载的规则： 1.方法名称必须相同 2.参数列表必须不同 3.方法的返回类型可以相同也可以不相同 4.仅仅返回类型不同不足以成为方法的重载错误版（下面这个就是方法功能相同，但是参数列表不同，我们又要要求方法见名知意，很明显，现在没有做到） public static void main(String[] args) {">
+<meta name="keywords" content="java基础之方法重载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java基础之方法重载">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;11&#x2F;22&#x2F;java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
+<meta property="og:description" content="方法重载： 我们将名字相同，参数列表不同的两个（或多个）方法， 称为重载 方法重载的规则： 1.方法名称必须相同 2.参数列表必须不同 3.方法的返回类型可以相同也可以不相同 4.仅仅返回类型不同不足以成为方法的重载错误版（下面这个就是方法功能相同，但是参数列表不同，我们又要要求方法见名知意，很明显，现在没有做到） public static void main(String[] args) {">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-22T02:50:21.108Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
@@ -152,62 +153,323 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-java基础之方法重载" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-w">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-
-<a href="/2019/10/22/%E5%85%B3%E4%BA%8EChrome%E4%B8%80%E6%AC%BE%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/" class="archive-article-date">
-  	<time datetime="2019-10-22T13:10:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/22/%E5%85%B3%E4%BA%8EChrome%E4%B8%80%E6%AC%BE%E7%89%B9%E5%88%AB%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6/">关于Chrome一款特别好用的插件</a>
+    <h1 class="article-title" itemprop="name">
+      java基础之方法重载
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        
+
+<a href="/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" class="archive-article-date">
+  	<time datetime="2019-11-22T02:34:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>方法重载：
+我们将名字相同，参数列表不同的两个（或多个）方法，
+称为重载
+方法重载的规则：
+1.方法名称必须相同
+2.参数列表必须不同
+3.方法的返回类型可以相同也可以不相同
+4.仅仅返回类型不同不足以成为方法的重载</code></pre><h3 id="错误版"><a href="#错误版" class="headerlink" title="错误版"></a>错误版</h3><pre><code>（下面这个就是方法功能相同，但是参数列表不同，我们又要要求方法见名知意，很明显，现在没有做到）
+public static void main(String[] args) {
+    System.out.println(sum(10,20));
+    System.out.println(sum2(10,20,30));
+    System.out.println(sum3(10,20,30,40));
+
+
+}
+//求两数的和
+public static int sum(int x,int y){
+    return (x + y);
+}
+//求三数的和
+public static int sum2(int x,int y ,int z){
+    return (x+y+z);
+}
+//求4数的和
+public static int sum3(int x,int y ,int z,int d){
+    return (x+y+z+d);
+}
+}</code></pre><h3 id="改进版（名字相同，但是参数列表不同，这就是重载）"><a href="#改进版（名字相同，但是参数列表不同，这就是重载）" class="headerlink" title="改进版（名字相同，但是参数列表不同，这就是重载）"></a>改进版（名字相同，但是参数列表不同，这就是重载）</h3><pre><code>public static void main(String[] args) {
+    System.out.println(sum(10,20));
+    System.out.println(sum(10,20,30));
+    System.out.println(sum(10,20,30,40));
+
+
+}
+//求两数的和
+public static int sum(int x,int y){
+    return (x + y);
+}
+//求三数的和
+public static int sum(int x,int y ,int z){
+    return (x+y+z);
+}
+//求4数的和
+public static int sum(int x,int y ,int z,int d){
+    return (x+y+z+d);
+}
+}</code></pre>
+      
+	
+
+  <div class="declare">
+    <strong>本文作者：</strong>
+    
+      黄广志
+    
+
+	<br>
+	
+    <strong>本文链接：</strong>
+    https://github.com/ggzhi/ggzhi.github.io/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/
+    <br>
+    <strong>版权声明：</strong>
+    本作品采用
+    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+    进行许可。转载请注明出处！
+    
+      <br>
+      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+    
+  </div>
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zhifubao.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/weixin.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">浏览器插件</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">java基础之方法重载</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/11/22/java%E5%9F%BA%E7%A1%80%E4%B9%8B%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+
+
+<div  id="git"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment{
+  id: 'Fri Nov 22 2019 10:34:30 GMT+0800',
+  owner: "ggzhi",
+  repo: "ggzhi.github.io",
+  oauth: {
+     client_id: "b0b1a69e70cc2bbdf8d9",
+     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
+},
+})
+
+gitment.render('git')
+</script>
+
+
+
+
+
+
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2019/11/22/%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E9%A2%98/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">逻辑思维题</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#错误版"><span class="toc-number">1.</span> <span class="toc-text">错误版</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#改进版（名字相同，但是参数列表不同，这就是重载）"><span class="toc-number">2.</span> <span class="toc-text">改进版（名字相同，但是参数列表不同，这就是重载）</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
+      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
+      placeholder: '有错误希望大家评论指出来呀？'
+    });
+</script>
 
     
+  
+  
+  
+
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+    </section>
+  
+
+  
 
 
           </div>
@@ -230,9 +492,9 @@
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: 是,
 		toc_hide_index: true,
