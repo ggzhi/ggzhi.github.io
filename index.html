@@ -154,6 +154,118 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="ew-逻辑思维题" class="article article-type-ew  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/22/%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E9%A2%98/">逻辑思维题</a>
+    </h1>
+  
+
+        
+        
+
+<a href="/2019/11/22/%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2019-11-22T01:23:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-水仙花个数"><a href="#1-水仙花个数" class="headerlink" title="1.水仙花个数"></a>1.水仙花个数</h2><pre><code>在控制台输出所有的水仙花数，统计水仙花共有多少个？
+public static void main(String[] args) {
+    //定义三个变量分别来当水仙花数的个位十位和百位
+    int ge;
+    int shi;
+    int bai;
+    //for循环遍历，从100开始 ，一直到999,
+    for(int x = 100;x&lt;=999;x++){
+
+        int sum;
+        //个位
+        ge = x%10;
+        //十位
+        shi = x/10%10;
+        //百位
+        bai = x/100;
+        sum = ge*ge*ge+shi*shi*shi+bai*bai*bai;
+        if(sum == x){
+            System.out.println(sum);
+        }
+     }
+    }</code></pre><h2 id="2-纸张折叠成珠穆朗玛峰高度的次数（求和）"><a href="#2-纸张折叠成珠穆朗玛峰高度的次数（求和）" class="headerlink" title="2.纸张折叠成珠穆朗玛峰高度的次数（求和）"></a>2.纸张折叠成珠穆朗玛峰高度的次数（求和）</h2><pre><code>我国最高山峰是珠穆朗玛峰：8848m，我现在有一张足够大的纸张，厚度为：0.01m。请问，我折叠多少次，就可以保证厚度不低于珠穆朗玛峰的高度
+
+public static void main(String[] args) {
+    double d = 0.01;
+    double count = 0;
+
+    while(d&lt;8848){
+        d *= 2;
+        count += 1;
+        System.out.println(&quot;这是第&quot;+count+&quot;次,高度为&quot;+ d +&quot;m&quot;);
+    }
+    System.out.println(&quot;用了&quot;+count+&quot;次&quot;);
+    }
+}</code></pre>
+      
+	
+
+  <div class="declare" hidden="hidden"></div>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">逻辑思维题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/11/22/%E9%80%BB%E8%BE%91%E6%80%9D%E7%BB%B4%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-javaSe基础之位运算" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -872,85 +984,6 @@ int b = 4;
 
 
   
-    <article id="post-Java集合概述" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/">Java集合概述</a>
-    </h1>
-  
-
-        
-        
-
-<a href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/" class="archive-article-date">
-  	<time datetime="2019-10-21T13:07:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="在说集合前我们说一下数组"><a href="#在说集合前我们说一下数组" class="headerlink" title="在说集合前我们说一下数组"></a>在说集合前我们说一下数组</h2>
-        
-      
-	
-
-  <div class="declare" hidden="hidden"></div>
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/10/21/Java%E9%9B%86%E5%90%88%E6%A6%82%E8%BF%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1077,7 +1110,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">javaweb javaMail</a>
+                <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1085,7 +1118,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
+                <a href="javascript:void(0)" class="js-tag color2">javaweb javaMail</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">逻辑思维题</a>
               </li>
              
               <li class="article-tag-list-item">
