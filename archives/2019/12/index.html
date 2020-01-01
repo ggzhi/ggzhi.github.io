@@ -6,20 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://github.com/ggzhi/ggzhi.github.io">
-  <title>javaweb xml学习笔记二 | 黄广志的博客</title>
+  <title>Archives: 2019/12 | 黄广志的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1、schema约束dtd语法： &amp;lt;!ELEMENT 元素名称 约束&amp;gt;">
-<meta name="keywords" content="javaweb">
-<meta property="og:type" content="article">
-<meta property="og:title" content="javaweb xml学习笔记二">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;2019&#x2F;10&#x2F;29&#x2F;javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C&#x2F;index.html">
+  <meta name="description" content="物联网专业学生一枚，目前学习Java知识">
+<meta name="keywords" content="java，前端博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="黄广志的博客">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;ggzhi&#x2F;ggzhi.github.io&#x2F;archives&#x2F;2019&#x2F;12&#x2F;index.html">
 <meta property="og:site_name" content="黄广志的博客">
-<meta property="og:description" content="1、schema约束dtd语法： &amp;lt;!ELEMENT 元素名称 约束&amp;gt;">
+<meta property="og:description" content="物联网专业学生一枚，目前学习Java知识">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;d8ef8b2aa56c95212ea19af87ceb9c0a&#x2F;xmlnote&#x2F;WEBRESOURCEb2f248721761776a6532e5a35338a79f&#x2F;49">
-<meta property="og:updated_time" content="2019-10-29T10:39:29.305Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;note.youdao.com&#x2F;yws&#x2F;public&#x2F;resource&#x2F;d8ef8b2aa56c95212ea19af87ceb9c0a&#x2F;xmlnote&#x2F;WEBRESOURCEb2f248721761776a6532e5a35338a79f&#x2F;49">
   
     <link rel="alternative" href="/atom.xml" title="黄广志的博客" type="application/atom+xml">
   
@@ -155,656 +152,62 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-javaweb-b-xml学习笔记二" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      javaweb xml学习笔记二
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-“">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	
+
+<a href="/2019/12/22/freemarker%E5%AF%B9%E5%AF%B9%E7%A9%BA%E5%8F%98%E9%87%8F%E6%8A%A5%E9%94%99/" class="archive-article-date">
+  	<time datetime="2019-12-22T10:52:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-22</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/12/22/freemarker%E5%AF%B9%E5%AF%B9%E7%A9%BA%E5%8F%98%E9%87%8F%E6%8A%A5%E9%94%99/">freemarker对对空变量报错</a>
     </h1>
   
 
-        
-        
-
-<a href="/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" class="archive-article-date">
-  	<time datetime="2019-10-29T10:25:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-29</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="1、schema约束"><a href="#1、schema约束" class="headerlink" title="1、schema约束"></a>1、schema约束</h2><pre><code>dtd语法： &lt;!ELEMENT 元素名称 约束&gt;</code></pre><a id="more"></a>
-<pre><code>** schema符合xml的语法，xml语句
-** 一个xml中可以有多个schema，多个schema使用名称空间区分（类似于java包名）
-** dtd里面有PCDATA类型，但是在schema里面可以支持更多的数据类型
-    *** 比如 年龄 只能是整数，在schema可以直接定义一个整数类型
-*** schema语法更加复杂，schema目前不能替代dtd</code></pre><h2 id="2、schema的快速入门"><a href="#2、schema的快速入门" class="headerlink" title="2、schema的快速入门"></a>2、schema的快速入门</h2><pre><code>* 创建一个schema文件 后缀名是 .xsd
-    ** 根节点 &lt;schema&gt;
-** 在schema文件里面
-    ** 属性  xmlns=&quot;http://www.w3.org/2001/XMLSchema&quot;
-        - 表示当前xml文件是一个约束文件
-    ** targetNamespace=&quot;http://www.itcast.cn/20151111&quot;
-        - 使用schema约束文件，直接通过这个地址引入约束文件
-    ** elementFormDefault=&quot;qualified&quot;
-步骤
-    （1）看xml中有多少个元素
-        &lt;element&gt;
-    （2）看简单元素和复杂元素
-        * 如果复杂元素
-            &lt;complexType&gt;
-                &lt;sequence&gt;
-                    子元素
-                &lt;/sequence&gt;
-        &lt;/complexType&gt;
-    （3）简单元素，写在复杂元素的
-        &lt;element name=&quot;person&quot;&gt;
-        &lt;complexType&gt;
-        &lt;sequence&gt;
-                &lt;element name=&quot;name&quot; type=&quot;string&quot;&gt;&lt;/element&gt;
-                &lt;element name=&quot;age&quot; type=&quot;int&quot;&gt;&lt;/element&gt;
-        &lt;/sequence&gt;
-        &lt;/complexType&gt;
-        &lt;/element&gt;
-
-    （4）在被约束文件里面引入约束文件
-        &lt;person xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-        xmlns=&quot;http://www.itcast.cn/20151111&quot;
-        xsi:schemaLocation=&quot;http://www.itcast.cn/20151111 1.xsd&quot;&gt;
-
-        ** xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-            -- 表示xml是一个被约束文件
-        ** xmlns=&quot;http://www.itcast.cn/20151111&quot;
-            -- 是约束文档里面 targetNamespace
-        ** xsi:schemaLocation=&quot;http://www.itcast.cn/20151111 1.xsd&quot;&gt;
-            -- targetNamespace 空格  约束文档的地址路径
-
-
-* &lt;sequence&gt;：表示元素的出现的顺序
-&lt;all&gt;: 元素只能出现一次
-&lt;choice&gt;：元素只能出现其中的一个
-maxOccurs=&quot;unbounded&quot;： 表示元素的出现的次数
-&lt;any&gt;&lt;/any&gt;:表示任意元素
-
-* 可以约束属性
-    * 写在复杂元素里面
-    ***写在　&lt;/complexType&gt;之前
-    －－
-    &lt;attribute name=&quot;id1&quot; type=&quot;int&quot; use=&quot;required&quot;&gt;&lt;/attribute&gt;
-        - name: 属性名称
-        - type：属性类型 int stirng
-        - use：属性是否必须出现 required
-
-* 复杂的schema约束
-    &lt;company xmlns = &quot;http://www.example.org/company&quot;
-xmlns:dept=&quot;http://www.example.org/department&quot;
-xmlns:xsi = &quot;http://www.w3.org/2001/XMLSchema-instance&quot;
-xsi:schemaLocation=&quot;http://www.example.org/company company.xsd http://www.example.org/department department.xsd&quot; 
-
-* 引入多个schema文件，可以给每个起一个别名
-
-&lt;employee age=&quot;30&quot;&gt;
-    &lt;!-- 部门名称 --&gt; 
-    &lt;dept:name&gt;100&lt;/dept:name&gt;
-    * 想要引入部门的约束文件里面的name，使用部门的别名 detp:元素名称
-    &lt;!-- 员工名称 --&gt;
-    &lt;name&gt;王晓晓&lt;/name&gt;   
-&lt;/employee&gt;</code></pre><p><img src="https://note.youdao.com/yws/public/resource/d8ef8b2aa56c95212ea19af87ceb9c0a/xmlnote/WEBRESOURCEb2f248721761776a6532e5a35338a79f/49" alt="XML"></p>
-<h2 id="3、sax解析的原理（-）"><a href="#3、sax解析的原理（-）" class="headerlink" title="3、sax解析的原理（****）"></a>3、sax解析的原理（<strong>****</strong>）</h2><pre><code>* 解析xml有两种技术 dom 和sax
-
-* 根据xml的层级结构在内存中分配一个树形结构
-** 把xml中标签，属性，文本封装成对象
-
-* sax方式：事件驱动，边读边解析
-* 在javax.xml.parsers包里面
-    ** SAXParser
-        此类的实例可以从 SAXParserFactory.newSAXParser() 方法获得
-        - parse(File f, DefaultHandler dh) 
-            * 两个参数
-            ** 第一个参数：xml的路径
-            ** 事件处理器
-
-    ** SAXParserFactory
-        实例 newInstance() 方法得到
-* 画图分析一下sax执行过程
-    * 当解析到开始标签时候，自动执行startElement方法
-    * 当解析到文本时候，自动执行characters方法
-    * 当解析到结束标签时候，自动执行endElement方法</code></pre><h2 id="4、使用jaxp的sax方式解析xml（会写-）"><a href="#4、使用jaxp的sax方式解析xml（会写-）" class="headerlink" title="4、使用jaxp的sax方式解析xml（会写*）"></a>4、使用jaxp的sax方式解析xml（<strong>会写*</strong>）</h2><pre><code>* sax方式不能实现增删改操作，只能做查询操作
-** 打印出整个文档
-*** 执行parse方法，第一个参数xml路径，第二个参数是 事件处理器
-    *** 创建一个类，继承事件处理器的类，
-    ***重写里面的三个方法
-
- * 获取到所有的name元素的值
-    ** 定义一个成员变量 flag= false
-    ** 判断开始方法是否是name元素，如果是name元素，把flag值设置成true
-    ** 如果flag值是true，在characters方法里面打印内容
-    ** 当执行到结束方法时候，把flag值设置成false
-
- * 获取第一个name元素的值
-    ** 定义一个成员变量 idx=1
-    ** 在结束方法时候，idx+1 idx++
-    ** 想要打印出第一个name元素的值，
-        - 在characters方法里面判断，
-        -- 判断flag=true 并且 idx==1，在打印内容</code></pre><h2 id="5、使用dom4j解析xml"><a href="#5、使用dom4j解析xml" class="headerlink" title="5、使用dom4j解析xml"></a>5、使用dom4j解析xml</h2><pre><code>* dom4j，是一个组织，针对xml解析，提供解析器 dom4j
-
-* dom4j不是javase的一部分，想要使用第一步需要怎么做？
-    *** 导入dom4j提供jar包
-    -- 创建一个文件夹 lib
-    -- 复制jar包到lib下面，
-    -- 右键点击jar包，build path -- add to build path
-    -- 看到jar包，变成奶瓶样子，表示导入成功
-
-* 得到document
-     SAXReader reader = new SAXReader();
-         Document document = reader.read(url);
-* document的父接口是Node
-    * 如果在document里面找不到想要的方法，到Node里面去找
-
-* document里面的方法 getRootElement() ：获取根节点 返回的是Element
-
-* Element也是一个接口，父接口是Node
-    - Element和Node里面方法
-    ** getParent()：获取父节点
-    ** addElement：添加标签
-
-    * element(qname)
-        ** 表示获取标签下面的第一个子标签
-        ** qname：标签的名称
-    * elements(qname)
-        ** 获取标签下面是这个名称的所有子标签（一层）
-        ** qname：标签名称
-    * elements()
-        ** 获取标签下面的所有一层子标签</code></pre><h2 id="6、使用dom4j查询xml"><a href="#6、使用dom4j查询xml" class="headerlink" title="6、使用dom4j查询xml"></a>6、使用dom4j查询xml</h2><pre><code>* 解析是从上到下解析
-* 查询所有name元素里面的值
-    /*
-        1、创建解析器
-        2、得到document
-        3、得到根节点  getRootElement() 返回Element
-
-        4、得到所有的p1标签
-            * elements(&quot;p1&quot;) 返回list集合
-            * 遍历list得到每一个p1
-        5、得到name
-            * 在p1下面执行 element(&quot;name&quot;)方法 返回Element
-        6、得到name里面的值
-            * getText方法得到值
-    */
-
-* 查询第一个name元素的值
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 3、得到根节点
-     * 
-     * 4、得到第一个p1元素  
-        ** element(&quot;p1&quot;)方法 返回Element
-     * 5、得到p1下面的name元素
-        ** element(&quot;name&quot;)方法 返回Element
-     * 6、得到name元素里面的值
-        ** getText方法
-     * */
-* 获取第二个name元素的值
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 3、得到根节点
-     * 
-     *  4、得到所有的p1 
-        ** 返回 list集合
-     *  5、遍历得到第二个p1
-        ** 使用list下标得到 get方法，集合的下标从 0 开始，想要得到第二个值，下标写 1 
-     *  6、得到第二个p1下面的name
-        ** element(&quot;name&quot;)方法 返回Element
-     *  7、得到name的值
-        ** getText方法
-     * */</code></pre><h2 id="7、使用dom4j实现添加操作"><a href="#7、使用dom4j实现添加操作" class="headerlink" title="7、使用dom4j实现添加操作"></a>7、使用dom4j实现添加操作</h2><pre><code>* 在第一个p1标签末尾添加一个元素 &lt;sex&gt;nv&lt;/sex&gt;
-* 步骤
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 3、得到根节点
-     * 
-     * 4、获取到第一个p1
-        * 使用element方法
-     * 5、在p1下面添加元素
-        * 在p1上面直接使用 addElement(&quot;标签名称&quot;)方法 返回一个Element
-
-     * 6、在添加完成之后的元素下面添加文本
-     *    在sex上直接使用 setText(&quot;文本内容&quot;)方法
-     * 7、回写xml
-        * 格式化 OutputFormat,使用 createPrettyPrint方法，表示一个漂亮的格式
-        * 使用类XMLWriter 直接new 这个类 ，传递两个参数
-            *** 第一个参数是xml文件路径 new FileOutputStream(&quot;路径&quot;)
-            *** 第二个参数是格式化类的值
-     * */    </code></pre><h2 id="8、使用dom4j实现在特定位置添加元素"><a href="#8、使用dom4j实现在特定位置添加元素" class="headerlink" title="8、使用dom4j实现在特定位置添加元素"></a>8、使用dom4j实现在特定位置添加元素</h2><pre><code>* 在第一个p1下面的age标签之前添加 &lt;school&gt;ecit.edu.cn&lt;/schlool&gt;
-* 步骤
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 3、得到根节点
-     * 4、获取到第一个p1
-     * 
-     * 5、获取p1下面的所有的元素
-     *         ** elements()方法 返回 list集合
-
-     *      ** 使用list里面的方法，在特定位置添加元素
-     *        ** 首先创建元素 在元素下面创建文本
-                - 使用DocumentHelper类方法createElement创建标签
-                - 把文本添加到标签下面 使用 setText(&quot;文本内容&quot;)方法
-
-     *          *** list集合里面的 add(int index, E element)
-     *              - 第一个参数是 位置 下标，从0开始
-     *              - 第二个参数是 要添加的元素
-     * 6、回写xml
-     * */
-
-** 可以对得到document的操作和 回写xml的操作，封装成方法
-** 也可以把传递的文件路径，封装成一个常量
-*** 好处：可以提高开发速度，可以提交代码可维护性
-    - 比如想要修改文件路径（名称），这个时候只需要修改常量的值就可以了，其他代码不需要做任何改变
-    -</code></pre><h2 id="9、使用dom4j实现修改节点的操作"><a href="#9、使用dom4j实现修改节点的操作" class="headerlink" title="9、使用dom4j实现修改节点的操作"></a>9、使用dom4j实现修改节点的操作</h2><pre><code>* 修改第一个p1下面的age元素的值 &lt;age&gt;30&lt;/age&gt;
-* 步骤
-/*
-     * 1、得到document
-     * 2、得到根节点，然后再得到第一个p1元素
-     * 3、得到第一个p1下面的age
-        element(&quot;&quot;)方法
-     * 4、修改值是 30
-     *    * 使用setText(&quot;文本内容&quot;)方法
-     * 5、回写xml
-     * 
-     * */</code></pre><h2 id="10、使用dom4j实现删除节点的操作"><a href="#10、使用dom4j实现删除节点的操作" class="headerlink" title="10、使用dom4j实现删除节点的操作"></a>10、使用dom4j实现删除节点的操作</h2><pre><code>* 删除第一个p1下面的&lt;school&gt;ecit&lt;/school&gt;元素
-* 步骤
-/*
-     * 1、得到document
-     * 2、得到根节点
-     * 3、得到第一个p1标签
-     * 4、得到第一个p1下面的school元素
-
-     * 5、删除（使用p1删除school）
-     *    * 得到school的父节点
-            - 第一种直接得到p1
-            - 使用方法 getParent方法得到
-        * 删除操作
-            - 在p1上面执行remove方法删除节点
-     * 6、回写xml
-     * */</code></pre><h2 id="11、使用dom4j获取属性的操作"><a href="#11、使用dom4j获取属性的操作" class="headerlink" title="11、使用dom4j获取属性的操作"></a>11、使用dom4j获取属性的操作</h2><pre><code>* 获取第一个p1里面的属性id1的值
-* 步骤
-/*
-     * 1、得到document
-     * 2、得到根节点
-     * 3、得到第一个p1元素
-     * 4、得到p1里面的属性值
-        - p1.attributeValue(&quot;id1&quot;);
-        - 在p1上面执行这个方法，里面的参数是属性名称
-     * */</code></pre><h2 id="12、使用dom4j支持xpath的操作"><a href="#12、使用dom4j支持xpath的操作" class="headerlink" title="12、使用dom4j支持xpath的操作"></a>12、使用dom4j支持xpath的操作</h2><pre><code>* 可以直接获取到某个元素 
-
-* 第一种形式
-    /AAA/DDD/BBB： 表示一层一层的，AAA下面 DDD下面的BBB
-* 第二种形式
-    //BBB： 表示和这个名称相同，表示只要名称是BBB，都得到
-* 第三种形式
-    /*: 所有元素
-* 第四种形式
-    **　BBB[1]：　表示第一个BBB元素
-    ××　BBB[last()]：表示最后一个BBB元素
-* 第五种形式
-    ** //BBB[@id]： 表示只要BBB元素上面有id属性，都得到
-* 第六种形式
-    ** //BBB[@id=&apos;b1&apos;] 表示元素名称是BBB,在BBB上面有id属性，并且id的属性值是b1</code></pre><h2 id="13、使用dom4j支持xpath具体操作"><a href="#13、使用dom4j支持xpath具体操作" class="headerlink" title="13、使用dom4j支持xpath具体操作"></a>13、使用dom4j支持xpath具体操作</h2><pre><code>** 默认的情况下，dom4j不支持xpath
-** 如果想要在dom4j里面是有xpath
-    * 第一步需要，引入支持xpath的jar包，使用 jaxen-1.1-beta-6.jar
-    ** 需要把jar包导入到项目中
-
-** 在dom4j里面提供了两个方法，用来支持xpath
-    *** selectNodes(&quot;xpath表达式&quot;)
-        - 获取多个节点
-    *** selectSingleNode(&quot;xpath表达式&quot;)
-        - 获取一个节点
-
-** 使用xpath实现：查询xml中所有name元素的值
-    ** 所有name元素的xpath表示： //name
-    ** 使用selectNodes(&quot;//name&quot;);
-    ** 代码和步骤
-    /*
-     * 1、得到document
-     * 2、直接使用selectNodes(&quot;//name&quot;)方法得到所有的name元素
-     * 
-     * */
-        //得到document
-        Document document = Dom4jUtils.getDocument(Dom4jUtils.PATH);
-        //使用selectNodes(&quot;//name&quot;)方法得到所有的name元素
-        List&lt;Node&gt; list = document.selectNodes(&quot;//name&quot;);
-        //遍历list集合
-        for (Node node : list) {
-            //node是每一个name元素
-            //得到name元素里面的值
-            String s = node.getText();
-            System.out.println(s);
-        }
-
-** 使用xpath实现：获取第一个p1下面的name的值
-    * //p1[@id1=&apos;aaaa&apos;]/name
-    * 使用到 selectSingleNode(&quot;//p1[@id1=&apos;aaaa&apos;]/name&quot;)
-    * 步骤和代码
-    /*
-     * 1、得到document
-     * 2、直接使用selectSingleNode方法实现
-     *     - xpath ： //p1[@id1=&apos;aaaa&apos;]/name
-     * */
-    //得到document
-    Document document = Dom4jUtils.getDocument(Dom4jUtils.PATH);
-    //直接使用selectSingleNode方法实现
-    Node name1 = document.selectSingleNode(&quot;//p1[@id1=&apos;aaaa&apos;]/name&quot;); //name的元素
-    //得到name里面的值
-    String s1 = name1.getText();
-    System.out.println(s1);</code></pre><h2 id="14、实现简单的学生管理系统"><a href="#14、实现简单的学生管理系统" class="headerlink" title="14、实现简单的学生管理系统"></a>14、实现简单的学生管理系统</h2><pre><code>** 使用xml当做数据，存储学生信息
-
-** 创建一个xml文件，写一些学生信息
-
-** 增加操作
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 3、获取到根节点
-     * 4、在根节点上面创建stu标签
-     * 5、在stu标签上面依次添加id name age
-        ** addElement方法添加
-     * 6、在id name age上面依次添加值
-     *    ** setText方法
-     * 7、回写xml
-     * */
-
-** 删除操作（根据id删除）
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 
-     * 3、获取到所有的id    
-     *     使用xpath //id 返回 list集合
-     * 4、遍历list集合
-     * 5、判断集合里面的id和传递的id是否相同
-     * 6、如果相同，把id所在的stu删除
-     * 
-     * */
-
-** 查询操作（根据id查询）
-    /*
-     * 1、创建解析器
-     * 2、得到document
-     * 
-     * 3、获取到所有的id
-     * 4、返回的是list集合，遍历list集合
-     * 5、得到每一个id的节点
-     * 6、id节点的值
-     * 7、判断id的值和传递的id值是否相同
-     * 8、如果相同，先获取到id的父节点stu
-     * 9、通过stu获取到name age值
-
-     ** 把这些值封装到一个对象里面 返回对象
-     * 
-     * */</code></pre>
-      
-	
-
-  <div class="declare">
-    <strong>本文作者：</strong>
-    
-      黄广志
-    
-
-	<br>
-	
-    <strong>本文链接：</strong>
-    https://github.com/ggzhi/ggzhi.github.io/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/
-    <br>
-    <strong>版权声明：</strong>
-    本作品采用
-    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-    进行许可。转载请注明出处！
-    
-      <br>
-      <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-    
-  </div>
-
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zhifubao.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">javaweb</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">freemarker</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://github.com/ggzhi/ggzhi.github.io/2019/10/29/javaweb-b-xml%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%BA%8C/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-
-
-<div  id="git"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment{
-  id: 'Tue Oct 29 2019 18:25:44 GMT+0800',
-  owner: "ggzhi",
-  repo: "ggzhi.github.io",
-  oauth: {
-     client_id: "b0b1a69e70cc2bbdf8d9",
-     client_secret:"2c3cb53ae5fba57b2df4048885d3b4f437e8ff44",
-},
-})
-
-gitment.render('git')
-</script>
-
-
-
-
-
-
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/11/10/mysql%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          mysql常用命令
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/10/28/JAVAWeb-xml%E7%AC%94%E8%AE%B0/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">javaWeb xml笔记</div>
-      <i class="icon-circle-right"></i>
-    </a>
+    </div></section>
   
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、schema约束"><span class="toc-number">1.</span> <span class="toc-text">1、schema约束</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、schema的快速入门"><span class="toc-number">2.</span> <span class="toc-text">2、schema的快速入门</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、sax解析的原理（-）"><span class="toc-number">3.</span> <span class="toc-text">3、sax解析的原理（****）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、使用jaxp的sax方式解析xml（会写-）"><span class="toc-number">4.</span> <span class="toc-text">4、使用jaxp的sax方式解析xml（会写*）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5、使用dom4j解析xml"><span class="toc-number">5.</span> <span class="toc-text">5、使用dom4j解析xml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6、使用dom4j查询xml"><span class="toc-number">6.</span> <span class="toc-text">6、使用dom4j查询xml</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7、使用dom4j实现添加操作"><span class="toc-number">7.</span> <span class="toc-text">7、使用dom4j实现添加操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8、使用dom4j实现在特定位置添加元素"><span class="toc-number">8.</span> <span class="toc-text">8、使用dom4j实现在特定位置添加元素</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9、使用dom4j实现修改节点的操作"><span class="toc-number">9.</span> <span class="toc-text">9、使用dom4j实现修改节点的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10、使用dom4j实现删除节点的操作"><span class="toc-number">10.</span> <span class="toc-text">10、使用dom4j实现删除节点的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11、使用dom4j获取属性的操作"><span class="toc-number">11.</span> <span class="toc-text">11、使用dom4j获取属性的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12、使用dom4j支持xpath的操作"><span class="toc-number">12.</span> <span class="toc-text">12、使用dom4j支持xpath的操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13、使用dom4j支持xpath具体操作"><span class="toc-number">13.</span> <span class="toc-text">13、使用dom4j支持xpath具体操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14、实现简单的学生管理系统"><span class="toc-number">14.</span> <span class="toc-text">14、实现简单的学生管理系统</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
-      <div class="valine_comment"></div>
-<!--载入js，在</body>之前插入即可-->
-<!--Leancloud 操作库:-->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<!--Valine 的核心代码库-->
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-  var notify = 'true' == true ? true : false;
-  var verify = 'false' == true ? true : false;
-  new Valine({
-      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-      av: AV,
-      el: '.valine_comment',
-      emoticon_url: 'https://cloud.panjunwen.com/alu',
-      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
-      app_id: 'xL9T6NFmVRVJJ69PMkiSV849-gzGzoHsz',
-      app_key: '6BsF1FC3E1Ar02W4hsFipUJJ',
-      placeholder: '有错误希望大家评论指出来呀？'
-    });
-</script>
 
     
-  
-  
-  
-
-  
-
-  
-    <section id="comments">
-      <div id="disqus_thread"></div>
-        <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = '[object Object]'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-      </script>
-      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-    </section>
-  
-
-  
 
 
           </div>
@@ -827,8 +230,8 @@ gitment.render('git')
 	var yiliaConfig = {
 		mathjax: 错误,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: 是,
