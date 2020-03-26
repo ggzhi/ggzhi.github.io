@@ -177,62 +177,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="一份非常值得看的面试题"><a href="#一份非常值得看的面试题" class="headerlink" title="一份非常值得看的面试题"></a>一份非常值得看的面试题</h2><p>包含的模块有：java基础，容器，多线程、反射、对象拷贝、Java Web 、异常、网络、设计模式、Spring/Spring MVC、Spring Boot/Spring Cloud、Hibernate、MyBatis、RabbitMQ、Kafka、Zookeeper、MySQL、Redis、JVM  ，如下图所示</p>
-<p><img src="https://s1.ax1x.com/2020/03/26/8z5KHO.png" alt="8z5KHO.png"></p>
-<h2 id="java基础"><a href="#java基础" class="headerlink" title="java基础"></a>java基础</h2><h5 id="1-JDK和JRE有什么区别？"><a href="#1-JDK和JRE有什么区别？" class="headerlink" title="1.JDK和JRE有什么区别？"></a>1.JDK和JRE有什么区别？</h5><p>​     JDK:，Java工具包，提供了Java的开发环境和运行环境</p>
-<p>​     JRE：java运行环境 ，为java的运行提供了环境 </p>
-<p>具体来说，JDK其实包含了JRE，同时还包含了编译Java编码的编译器Javac,还包含了很多java程序调试和分析的工具，简单来说，如果你需要运行java程序，只需要安装JRE就够了，如果需要编译java文件，必须要安装JDK</p>
-<h5 id="2-和-equals的区别是什么"><a href="#2-和-equals的区别是什么" class="headerlink" title="2.== 和 equals的区别是什么?"></a>2.== 和 equals的区别是什么?</h5><p>  双==号 解读</p>
-<blockquote>
-<p>如果是整型变量，则比的是值是否相同</p>
-</blockquote>
-<blockquote>
-<p> 如果是引用类型，则比的是引用地址是否相同</p>
-</blockquote>
-<p>equals解读</p>
-<blockquote>
-<p>则比较的是值是否相同。</p>
-</blockquote>
-<p> 举例： String s = new String(“张三”);</p>
-<p>​              String s2 = new String(“张三”)；</p>
-<p>System.out.println(s.equals(s2));   结果为true</p>
-<h5 id="3-两个对象的hashCode-相同，则他们的equals-也一定为true，对吗"><a href="#3-两个对象的hashCode-相同，则他们的equals-也一定为true，对吗" class="headerlink" title="3.两个对象的hashCode()相同，则他们的equals()也一定为true，对吗"></a>3.两个对象的hashCode()相同，则他们的equals()也一定为true，对吗</h5><p>不一定 ，在散列表中，hashCode()相等即两个键值对的哈希值相等，然而哈希值相等，但是键值对却不一定相等</p>
-<h5 id="4-final-在Java中有什么作用"><a href="#4-final-在Java中有什么作用" class="headerlink" title="4.final 在Java中有什么作用"></a>4.final 在Java中有什么作用</h5><p>final修饰的类叫最终类，该类不能被继承</p>
-<p>final修饰的方法，该方法不能被重写</p>
-<p>final修饰变量的时候，变量变常量，必须初始化值，并且值还不能修改</p>
-<h5 id="5-java中的Math-rount-1-5-结果是多少"><a href="#5-java中的Math-rount-1-5-结果是多少" class="headerlink" title="5.java中的Math.rount(-1.5)结果是多少"></a>5.java中的Math.rount(-1.5)结果是多少</h5><p>因为在数轴上取值时，中间值0.5向右取整，所以正0.5取整为1，反之，-0.5直接舍弃</p>
-<h5 id="6-String属于基本的数据类型吗"><a href="#6-String属于基本的数据类型吗" class="headerlink" title="6.String属于基本的数据类型吗"></a>6.String属于基本的数据类型吗</h5><p>不属于 ，基本数据类型分为4类8种 整型：byte short int long   浮点型：float double  字符型：char  布尔值 ： boolean </p>
-<h5 id="7-Java中操作字符串都有哪些类，它们之间有什么区别"><a href="#7-Java中操作字符串都有哪些类，它们之间有什么区别" class="headerlink" title="7.Java中操作字符串都有哪些类，它们之间有什么区别"></a>7.Java中操作字符串都有哪些类，它们之间有什么区别</h5><p>操作字符串的类有  String  StringBuffer StringBuilder   </p>
-<p>String 和StringBuffer  StringBuilder的区别在于 String声明的都是不可变的对象，每次操作都会生成新的对象，然后将指针指向新的String对象 ，而StringBuffer和StringBuilder是在原有对象的基本上继续操作，所以经常改变字符串内容的情况下最好的不要用String </p>
-<p>StringBuffer和StringBuffer 最大的区别在于 StringBuffer是安全的，StringBuilder是非线程安全的，但是StringBuilder的性能却高于StringBuffer  单线程推荐用StringBuilder 多线程用StringBuffer</p>
-<h5 id="8-String-str-”i”-和-String-str-new-String-“i”-一样吗"><a href="#8-String-str-”i”-和-String-str-new-String-“i”-一样吗" class="headerlink" title="8.String  str =”i” 和 String str = new String(“i”)一样吗"></a>8.String  str =”i” 和 String str = new String(“i”)一样吗</h5><p>不一样，因为内存的分配方式不一样。String str=”i”的方式，Java 虚拟机会将其分配到常量池中；而 String str=new String(“i”) 则会被分到堆内存中。</p>
-<h5 id="9-如何将字符串反转"><a href="#9-如何将字符串反转" class="headerlink" title="9.如何将字符串反转"></a>9.如何将字符串反转</h5><p>StringBuilder StringBuffer的</p>
-<p>reverse()方法</p>
-<h5 id="10-String的常用方法有哪些"><a href="#10-String的常用方法有哪些" class="headerlink" title="10.String的常用方法有哪些"></a>10.String的常用方法有哪些</h5><p>indexOf() 返回指定字符串的索引值</p>
-<p>charAt() 返回指定索引值的字符</p>
-<p>replace()  字符串替换</p>
-<p>trim(0 ) 去除字符串两端空白</p>
-<p>split() 分隔字符串，返回一个分割后的字符串数组</p>
-<p>getBytes()  返回字符串的byte类型数组</p>
-<p>length()  获取字符串的长度</p>
-<p>toLowerCase()  将字符串转成小写字母</p>
-<p>toUpperCase() 将字符串转成大写字符</p>
-<p>subString () 截取字符串</p>
-<p>equals（） 字符串比较</p>
-<h5 id="11-抽象类必须用抽象方法吗"><a href="#11-抽象类必须用抽象方法吗" class="headerlink" title="11.抽象类必须用抽象方法吗"></a>11.抽象类必须用抽象方法吗</h5><p>不必须 ，不一定非要用抽象方法</p>
-<h5 id="12-普通类和抽象类有哪些区别"><a href="#12-普通类和抽象类有哪些区别" class="headerlink" title="12. 普通类和抽象类有哪些区别"></a>12. 普通类和抽象类有哪些区别</h5><p>普通类不能包括抽象方法，抽象类可以包含抽象方法</p>
-<p>抽象类不能直接实例化 ，普通类可以直接实例化</p>
-<h5 id="13-抽象类能用final修饰吗？"><a href="#13-抽象类能用final修饰吗？" class="headerlink" title="13.抽象类能用final修饰吗？"></a>13.抽象类能用final修饰吗？</h5><p>不能 ，抽象类就是让其他类继承的，如果定义为final，该类就不能被继承，这样彼此就会出产生矛盾 ,所以final不能修饰抽象类</p>
-<h5 id="14-接口和抽象类有什么区别"><a href="#14-接口和抽象类有什么区别" class="headerlink" title="14.接口和抽象类有什么区别"></a>14.接口和抽象类有什么区别</h5><p>实现： 抽象类的子类是要用extends来继承的 ，而implements接口是用来实现的</p>
-<p>构造函数： 抽象类可以有构造函数，接口不能有</p>
-<p>实现数量： 类可以实现很多接口，但只能继承一个抽象类</p>
-<h5 id="15-java中IO流分为几种"><a href="#15-java中IO流分为几种" class="headerlink" title="15.java中IO流分为几种"></a>15.java中IO流分为几种</h5><p>两种 Input输入流  output输出流</p>
-<p>字节流和字符流</p>
-<p>字节流是按8位传输以字节为单位进行输入和输出 </p>
-<p>字符流是按16位传输以字符为单位进行输入和输出</p>
-<h5 id="16-BIO-NIO-AIO有什么区别"><a href="#16-BIO-NIO-AIO有什么区别" class="headerlink" title="16.BIO  NIO   AIO有什么区别"></a>16.BIO  NIO   AIO有什么区别</h5><p>BIO : Block IO 同步阻塞式IO 就是我们平常使用的传统IO ，特点是模式简单使用方便，并发处理能力低</p>
-<p>NIO： Non IO 同步非阻塞IO，是传统IO的升级，客户端和服务端通过Channel(通道)通讯.实现了多路复用</p>
-<p>AIO：Asynchronous IO 是NIO的升级。也叫NIO2，实现了异步非阻塞IO，异步IO的操作基于事件和回调机制</p>
-
+        
       
 	
 
@@ -1137,23 +1082,19 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">freemarker</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">java</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">javaweb javaMail</a>
+                <a href="javascript:void(0)" class="js-tag color1">freemarker</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">java基本语法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">javaweb javaMail</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1169,11 +1110,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">java面试</a>
+                <a href="javascript:void(0)" class="js-tag color3">javaweb</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">生活记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">java面试</a>
               </li>
              
               <li class="article-tag-list-item">
